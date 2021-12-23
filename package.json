@@ -1,0 +1,24 @@
+{
+  "name": "blog-tekno-lagi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "unmei dev",
+    "build": "unmei build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzaini30/blog-tekno-lagi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mzaini30/blog-tekno-lagi/issues"
+  },
+  "homepage": "https://github.com/mzaini30/blog-tekno-lagi#readme",
+  "dependencies": {
+    "unmei": "^2.5.2"
+  }
+}

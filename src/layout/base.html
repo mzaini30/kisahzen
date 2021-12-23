@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	{% block head %}{% endblock %}
+</head>
+<body>
+	<section class="isinya">
+		{% block body %}{% endblock %}
+	</section>
+
+	<style lang="windi">
+		body {
+			@apply bg-green-400
+		}
+		[v-cloak] {
+			@apply hidden
+		}
+		.isinya {
+			@apply bg-white w-full max-w-[800px] mx-auto p-2
+		}
+	</style>
+</body>
+</html>

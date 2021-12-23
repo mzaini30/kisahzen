@@ -1,0 +1,113 @@
+{% extends '../layout/base.html' %}
+
+{% block head %}
+	<title>Olah Tier</title>
+	<script src="/vue.js"></script>
+{% endblock %}
+
+{% block body %}
+	<p><a class="kembali" href="/">beranda</a></p>
+	<h1>Olah Tier</h1>
+	<main class="aplikasi" v-cloak>
+		<p><strong>Input</strong></p>
+		<textarea name="" id="" cols="30" rows="10" placeholder="linkPertama
+linkKedua
+linkKetiga" v-model='input'></textarea>
+		<button class="olah" @click='mulaiOlah'>Olah</button>
+
+		<section v-if='isProses' class="warning">Masih proses. Jangan diclose dulu.</section>
+
+		<p><strong>Hasilnya ({{ linkJadi }}/{{ semuaLink }})</strong></p>
+		<textarea v-model='hasilnya' name="" id="" cols="30" rows="10" readonly="readonly"></textarea>
+	</main>
+
+	<script type="module">
+		import acak from '/acak.js'
+		import jsonp from '/jsonp.js'
+
+		function antiCors(link){
+			return `https://scrappy-php.herokuapp.com/?url=${encodeURIComponent(link)}`
+		}
+
+		let shortlink = [
+			'https://clck.ru/--?url=',
+			antiCors('https://vurl.com/api.php?url='),
+			'https://cutt.us/api.php?url=',
+			antiCors('https://v.gd/create.php?format=simple&url='),
+			antiCors('https://is.gd/create.php?format=simple&url='),
+			'https://tinyurl.com/api-create.php?url=',
+		]
+		shortlink = acak(shortlink)
+
+		const shortlinkBedaSendiri = antiCors('https://cutt.ly/api/api.php?key=fe2b7a7545507d3ade50ab16780c9a7ab47c0&short=')
+
+		PetiteVue.createApp({
+			input: '',
+			hasilnya: '',
+			semuaLink: 0,
+			linkJadi: 0,
+			isProses: false,
+			async mulaiOlah(){
+				this.isProses = true
+
+				let inputnya = this.input
+				inputnya = inputnya.split('\n').filter(x => x)
+
+				this.semuaLink = inputnya.length * (shortlink.length + 1) // banyaknya link yang harus dibuat
+
+				for (let x of shortlink){
+					for (let y of inputnya){
+						let dapat = await fetch(`${x}${encodeURIComponent(y)}`)
+						dapat = await dapat.text()
+						this.hasilnya += dapat + '\n'
+
+						if (dapat) {
+							this.linkJadi++
+						}
+
+					}
+				}
+
+				for (let x of inputnya){
+					let dapat = await fetch(`${shortlinkBedaSendiri}${encodeURIComponent(x)}`)
+					dapat = await dapat.json()
+					this.hasilnya += dapat.url.shortLink + '\n'
+
+					if (dapat) {
+						this.linkJadi++
+					}
+				}
+
+				if (this.linkJadi == this.semuaLink) {
+					this.isProses = false
+				}
+
+			}
+		}).mount('.aplikasi')
+	</script>
+
+	<style lang="windi">
+		* {
+			@apply focus:outline-none;
+		}
+		.kembali, .olah {
+			@apply border text-green-700 px-3 py-1 border-green-700 bg-green-200 rounded block w-min
+		}
+		.olah {
+			@apply my-2
+		}
+		textarea {
+			@apply border border-green-300 block w-full p-2
+		}
+		h1 {
+			@apply text-center p-2 text-3xl;
+			font-family: 'Comic Sans MS';
+		}
+		[readonly] {
+			@apply bg-gray-200
+		}
+		.warning {
+			@apply rounded bg-yellow-200 text-yellow-700 border border-yellow-700 px-3 py-1
+		}
+	</style>
+{% endblock %}

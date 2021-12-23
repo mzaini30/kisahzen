@@ -22,26 +22,28 @@ linkKetiga" v-model='input'></textarea>
 	</main>
 
 	<script type="module">
-		import acak from '/acak.js'
+		const redirect = 'https://www.kichink.com/home/issafari?uri='
+		const encodeRedirect = encodeURIComponent(redirect)
 
+		const tebasCors = 'https://scrappy-php.herokuapp.com/?url='
 		function antiCors(link){
-			return `https://scrappy-php.herokuapp.com/?url=${encodeURIComponent(link)}`
+			return `${tebasCors}${encodeURIComponent(link)}`
 		}
 
 		let shortlink = [
-			'https://clck.ru/--?url=',
+			'https://clck.ru/--?url=', // nggak mau generate kalau udah shortlink
+			antiCors('https://v.gd/create.php?format=simple&url=') + encodeRedirect, // selektif
+			antiCors('https://is.gd/create.php?format=simple&url=') + encodeRedirect, // selektif
 			antiCors('https://vurl.com/api.php?url='),
 			'https://cutt.us/api.php?url=',
-			antiCors('https://v.gd/create.php?format=simple&url='),
-			antiCors('https://is.gd/create.php?format=simple&url='),
-			'https://tinyurl.com/api-create.php?url=',
+			`https://tinyurl.com/api-create.php?url=${encodeRedirect}`, // suka Error
 		]
-		shortlink = acak(shortlink)
 
-		const shortlinkBedaSendiri = antiCors('https://cutt.ly/api/api.php?key=fe2b7a7545507d3ade50ab16780c9a7ab47c0&short=')
+		const shortlinkBedaSendiri = antiCors('https://cutt.ly/api/api.php?key=fe2b7a7545507d3ade50ab16780c9a7ab47c0&short=') + encodeRedirect
 
 		PetiteVue.createApp({
 			input: '',
+			linkTerbaru: [],
 			hasilnya: '',
 			semuaLink: 0,
 			linkJadi: 0,
@@ -49,16 +51,24 @@ linkKetiga" v-model='input'></textarea>
 			async mulaiOlah(){
 				this.isProses = true
 
-				let inputnya = this.input
-				inputnya = inputnya.split('\n').filter(x => x)
+				// let inputnya = this.input
+				this.linkTerbaru = this.input.split('\n').filter(x => x)
 
-				this.semuaLink = inputnya.length * (shortlink.length + 1) // banyaknya link yang harus dibuat
+				this.semuaLink = this.linkTerbaru.length * (shortlink.length + 1) // banyaknya link yang harus dibuat
 
 				for (let x of shortlink){
-					for (let y of inputnya){
-						let dapat = await fetch(`${x}${encodeURIComponent(y)}`)
+
+					let ambilLinknya = [...this.linkTerbaru]
+					this.linkTerbaru = []
+
+					for (let n in ambilLinknya){ // awalnya y, inputnya
+
+						let dapat = await fetch(`${x}${encodeURIComponent(ambilLinknya[n])}`)
 						dapat = await dapat.text()
 						this.hasilnya += dapat + '\n'
+						this.linkTerbaru = [...this.linkTerbaru, dapat]
+
+						// console.log(`${x}${encodeURIComponent(ambilLinknya[n])} --> ${dapat}`)
 
 						if (dapat) {
 							this.linkJadi++
@@ -67,10 +77,12 @@ linkKetiga" v-model='input'></textarea>
 					}
 				}
 
-				for (let x of inputnya){
+				for (let x of this.linkTerbaru){
 					let dapat = await fetch(`${shortlinkBedaSendiri}${encodeURIComponent(x)}`)
 					dapat = await dapat.json()
 					this.hasilnya += dapat.url.shortLink + '\n'
+
+					// console.log(`${shortlinkBedaSendiri}${encodeURIComponent(x)} --> ${dapat.url.shortLink}`)
 
 					if (dapat) {
 						this.linkJadi++

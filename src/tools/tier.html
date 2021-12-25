@@ -1,24 +1,28 @@
 {% extends '../layout/base.html' %}
 
 {% block head %}
-	<title>Olah Tier</title>
-	<script src="/vue.js"></script>
+	{% from '../macro/meta.html' import meta %}
+	{$ meta('Olah Tier', 'Generate Tier 7 lapis dengan sekejap, bisa ditinggal ngopi') $}
 {% endblock %}
 
 {% block body %}
-	<p><a class="kembali" href="/">beranda</a></p>
-	<h1>Olah Tier</h1>
+	<h1 class="judul">Olah Tier</h1>
 	<main class="aplikasi" v-cloak>
-		<p><strong>Input</strong></p>
-		<textarea name="" id="" cols="30" rows="10" placeholder="linkPertama
+
+		<section class="bagian">
+			<p><strong>Input</strong></p>
+			<textarea name="" id="" cols="30" rows="10" placeholder="linkPertama
 linkKedua
 linkKetiga" v-model='input'></textarea>
-		<button class="olah" @click='mulaiOlah'>Olah</button>
+			<button class="olah" @click='mulaiOlah'>Olah</button>	
 
-		<section v-if='isProses' class="warning">Masih proses. Jangan diclose dulu.</section>
-
-		<p><strong>Hasilnya ({{ linkJadi }}/{{ semuaLink }})</strong></p>
-		<textarea v-model='hasilnya' name="" id="" cols="30" rows="10" readonly="readonly"></textarea>
+			<section v-if='isProses' class="warning">Masih proses. Jangan diclose dulu.</section>
+		</section>
+		
+		<section class="bagian">
+			<p><strong>Hasilnya ({{ linkJadi }}/{{ semuaLink }})</strong></p>
+			<textarea v-model='hasilnya' name="" id="" cols="30" rows="10" readonly="readonly"></textarea>			
+		</section>
 	</main>
 
 	<script type="module">
@@ -101,18 +105,20 @@ linkKetiga" v-model='input'></textarea>
 		* {
 			@apply focus:outline-none;
 		}
+		.aplikasi {
+			@apply grid grid-cols-2 gap-2 <sm:(grid-cols-1 gap-0);
+		}
 		.kembali, .olah {
-			@apply border text-green-700 px-3 py-1 border-green-700 bg-green-200 rounded block w-min
+			@apply border text-red-700 px-3 py-1 border-red-700 bg-red-200 rounded block w-min
 		}
 		.olah {
 			@apply my-2
 		}
 		textarea {
-			@apply border border-green-300 block w-full p-2
+			@apply border border-red-300 block w-full p-2 rounded
 		}
 		h1 {
-			@apply text-center p-2 text-3xl;
-			font-family: 'Comic Sans MS';
+			@apply text-center p-2 text-3xl text-red-700
 		}
 		[readonly] {
 			@apply bg-gray-200

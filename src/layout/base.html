@@ -1,44 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2LTKGSC791"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-2LTKGSC791');
-	</script>
+	<!-- {% include '../import/analytics.html' %} -->
+	{% include '../import/redirect.html' %}
 	
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	{% block head %}{% endblock %}
+	<link rel="icon" href="/gambar/icon.jpg" />
 
-	<script>
-		let link = location.href
-		if (link.includes('https://blog-tekno-lagi.vercel.app')) {
-			link = link.replace('https://blog-tekno-lagi.vercel.app', 'https://kisahzen.com')
-			location.href = link
+	<script src="/lib/vue.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+	<style lang="windi">
+		.judul {
+			font-family: Sacramento, cursive;
 		}
-	</script>
+	</style>
 	
 </head>
 <body>
 	<section class="isinya">
-		{% block body %}{% endblock %}
+		<main class="konten">
+			{% block body %}{% endblock %}
+		</main>
+		<nav class="menu">
+
+			<a href="/" @click.prevent='console.log("Mantap")' class="tampil-menu" v-cloak>
+				{% include '../icon/menu.html' %}
+			</a>
+
+			<script>
+				PetiteVue.createApp({
+					
+				}).mount('.tampil-menu')
+			</script>
+
+			<a href="/">
+				{% include '../icon/beranda.html' %}
+			</a>
+			<a href="/">
+				{% include '../icon/tools.html' %}
+			</a>
+			<a href="/profil.html">
+				{% include '../icon/profil.html' %}
+			</a>
+		</nav>
 	</section>
 
 	<style lang="windi">
 		body {
-			@apply bg-green-400
+			@apply bg-gradient-to-b from-blue-500 to-violet-500
 		}
 		[v-cloak] {
 			@apply hidden
 		}
 		.isinya {
-			@apply bg-white w-full max-w-[800px] mx-auto p-2
+			@apply bg-white w-full max-w-[800px] mx-auto min-h-screen
+		}
+		.konten {
+			@apply min-h-[calc(100vh-36px)] p-2
+		}
+		.menu {
+			@apply bg-red-500 w-full sticky bottom-0 left-0 flex justify-around
+		}
+		.menu a {
+			@apply text-white p-2 hover:text-red-900;
+		}
+		.menu a svg {
+			@apply text-xl
 		}
 	</style>
 </body>

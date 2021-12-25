@@ -1,10 +1,10 @@
 lockfileVersion: 5.3
 
 specifiers:
-  unmei: ^2.5.2
+  unmei: ^2.5.3
 
 dependencies:
-  unmei: 2.5.2
+  unmei: 2.5.3
 
 packages:
 
@@ -739,7 +739,7 @@ packages:
       depd: 1.1.2
       inherits: 2.0.3
       setprototypeof: 1.1.0
-      statuses: 1.4.0
+      statuses: 1.5.0
     dev: false
 
   /http-errors/1.8.1:
@@ -1502,8 +1502,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: false
 
-  /unmei/2.5.2:
-    resolution: {integrity: sha512-mrDv07a4ku9FGkoFOGsldJAW/rBnjcjNvEMfiX5brweVqu5Ym/yztxinZM9UsyNVH4pZ6QvcQagSE/tnhQiP4w==}
+  /unmei/2.5.3:
+    resolution: {integrity: sha512-+dxhpI9Wbj/OygguXul3b6VqpP/4IgKCJbZ0KnbBH/wY/eUVh+D6g7ppCRY83oXFEPFp+M0R1mGQ52ds2czKuQ==}
     hasBin: true
     dependencies:
       browser-sync: 2.27.7

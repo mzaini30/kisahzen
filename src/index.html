@@ -1,9 +1,13 @@
 {% extends './layout/base.html' %}
 
 {% block head %}
-	<title>Blog Tekno Lagi</title>
+	{% from './macro/meta.html' import meta %}
+	{$ meta() $}
 {% endblock %}
 
 {% block body %}
 	<p><a href="/tools/tier.html">Tools Olah Tier</a></p>
+
+	<style lang="windi">
+	</style>
 {% endblock %}

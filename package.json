@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/mzaini30/blog-tekno-lagi#readme",
   "dependencies": {
-    "unmei": "^2.5.3"
+    "unmei": "^2.5.4"
   }
 }

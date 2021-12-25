@@ -1,1 +1,0 @@
-export default function(r){for(var t,o,a=r.length;0!==a;)o=Math.floor(Math.random()*a),t=r[--a],r[a]=r[o],r[o]=t;return r}

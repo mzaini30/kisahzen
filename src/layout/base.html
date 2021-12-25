@@ -21,18 +21,11 @@
 		<main class="konten">
 			{% block body %}{% endblock %}
 		</main>
-		<nav class="menu">
 
-			<!-- <a href="/" @click.prevent='console.log("Mantap")' class="tampil-menu" v-cloak>
+		<nav class="menu" v-cloak>
+			<a href="/" @click.prevent='isMenu = true'>
 				{% include '../icon/menu.html' %}
 			</a>
-
-			<script>
-				PetiteVue.createApp({
-					
-				}).mount('.tampil-menu')
-			</script> -->
-
 			<a href="/">
 				{% include '../icon/beranda.html' %}
 			</a>
@@ -42,7 +35,43 @@
 			<a href="/profil.html">
 				{% include '../icon/profil.html' %}
 			</a>
+
+			<section class="full" v-if='isMenu' v-cloak>
+				<nav class="isi-menunya">
+
+					<section @click='isMenu = false' class="menu-tutup">
+						<div></div>
+						<div>&times;</div>
+					</section>
+
+					<section class="menu-menu" v-cloak>
+						<p><a href="/semua.html" class="hover:underline">Semua Tulisan</a></p>
+						<div v-for='x in kategori'>
+							<p class="uppercase mb-1"><strong>{{ x.kategori }}</strong></p>
+							<ol>
+								<li class="ml-3 mb-1" v-for='y in x.subkategori.sort()'>
+									<a class="hover:underline" :href="'/?kategori=' + encodeURIComponent(y)">
+										{{ y }}
+									</a>
+								</li>
+							</ol>
+						</div>
+					</section>
+
+				</nav>
+			</section>
+
 		</nav>
+
+		<script type="module">
+			import kategori from '/data/kategori-post.js'
+
+			PetiteVue.createApp({
+				isMenu: false,
+				kategori: kategori.sort((a, b) => a.kategori > b.kategori ? 1 : -1)
+			}).mount('.menu')
+		</script>
+
 	</section>
 
 	<style lang="windi">
@@ -61,7 +90,7 @@
 		.menu {
 			@apply bg-red-500 w-full sticky bottom-0 left-0 flex justify-around
 		}
-		.menu a {
+		.menu > a {
 			@apply text-white p-2 hover:text-red-900;
 		}
 		.menu a svg {
@@ -72,6 +101,19 @@
 		}
 		img {
 			@apply max-w-full
+		}
+
+		.full {
+			@apply bg-gray-700/60 w-full h-screen fixed top-0 left-0
+		}
+		.isi-menunya {
+			@apply w-[300px] max-w-[80%] h-screen bg-white fixed top-0 left-0 overflow-auto
+		}
+		.menu-tutup {
+			@apply bg-black text-white p-1 px-2 text-xl cursor-pointer flex justify-between sticky top-0 left-0
+		}
+		.menu-menu {
+			@apply p-3
 		}
 	</style>
 </body>

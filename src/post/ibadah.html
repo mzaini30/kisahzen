@@ -1,0 +1,16 @@
+{% extends '../layout/post.html' %}
+
+{% block head %}
+	{% from '../macro/meta.html' import meta %}
+	{$ meta('Ini Makna Ibadah Bagiku', 'Mari sejenak kita maknai rutinitas kita ini', 'https://i.postimg.cc/RFJrCSyK/683e446beaad54541d2a1dc00b99eca7.jpg') $}
+{% endblock %}
+
+{% block judul %}
+	Ini Makna Ibadah Bagiku
+{% endblock %}
+
+{% block isi %}
+	@markdown
+		Ibadah. Hampir semua orang mengenali kata ini. Hmm... mungkin semuanya mengenalnya. Bahkan yang mengatakan dirinya tidak bertuhan saja seharusnya tau. Tapi, apakah kita pernah berusaha memaknai apa itu ibadah?
+	@endmarkdown
+{% endblock %}

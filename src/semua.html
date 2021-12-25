@@ -6,25 +6,23 @@
 {% endblock %}
 
 {% block body %}
-	<h1 class="judul">Kisah Zen</h1>
+	<h1 class="judul">Semua Kisah Zen</h1>
 
 	<main class="semua-app" v-cloak @vue:mounted='cekKategori'>
-		<section class="app" v-for='x in post'>
-			<a :href="'/post/' + x.slug + '.html'" class="card">
-				<img :src="x.gambar" alt="" />
-				<p>
+		<ol>
+			<li v-for='x in post'>
+				<a class="hover:underline" :href="'/post/' + x.slug + '.html'">
 					{{ x.judul }}
-					<span class="kategori">{{ x.kategori }}</span>
-				</p>
-			</a>
-		</section>
+				</a>
+			</li>
+		</ol>
 	</main>
 
 	<script type="module">
 		import post from '/data/post.js'
 
 		PetiteVue.createApp({
-			post: post.reverse(),
+			post: post.sort((a, b) => a.judul > b.judul ? 1 : -1),
 			cekKategori(){
 				if (location.search.includes('?kategori=')) {
 					let kategorinya = new URLSearchParams(location.search).get('kategori')
@@ -39,9 +37,6 @@
 		h1 {
 			@apply text-center text-3xl text-red-700 py-3 pb-5
 		}
-		.semua-app {
-			@apply grid gap-2 grid-cols-4 <sm:grid-cols-2;
-		}
 		.app .card {
 			@apply rounded overflow-hidden border border-gray-300 block
 		}
@@ -51,6 +46,9 @@
 		.kategori {
 			@apply bg-gray-200 rounded px-2 w-min block mt-1;
 			font-size: 10px;
+		}
+		li {
+			@apply mb-3 list-decimal ml-5
 		}
 	</style>
 {% endblock %}

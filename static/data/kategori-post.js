@@ -4,5 +4,11 @@ export default [
 		subkategori: [
 			'Frontend'
 		]
-	}
+	},
+	{
+		kategori: 'Renungan',
+		subkategori: [
+			'Religi'
+		]
+	},
 ]

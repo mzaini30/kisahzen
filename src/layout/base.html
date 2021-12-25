@@ -4,6 +4,15 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	{% block head %}{% endblock %}
+
+	<script>
+		let link = location.href
+		if (link.includes('https://blog-tekno-lagi.vercel.app')) {
+			link = link.replace('https://blog-tekno-lagi.vercel.app', 'http://kisahzen.com')
+			location.href = link
+		}
+	</script>
+	
 </head>
 <body>
 	<section class="isinya">

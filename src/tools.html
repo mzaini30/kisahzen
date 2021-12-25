@@ -1,0 +1,28 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+	{% from './macro/meta.html' import meta %}
+	{$ meta() $}
+{% endblock %}
+
+{% block body %}
+	<h1 class="judul">Apps</h1>
+
+	<main class="semua-app">
+		
+	</main>
+
+	<script type="module">
+		import tools from '/tools.js'
+
+		PetiteVue.createApp({
+			
+		}).mount('.semua-app')
+	</script>
+
+	<style lang="windi">
+		h1 {
+			@apply text-center text-3xl text-red-700 py-3
+		}
+	</style>
+{% endblock %}

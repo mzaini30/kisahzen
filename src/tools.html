@@ -6,23 +6,37 @@
 {% endblock %}
 
 {% block body %}
-	<h1 class="judul">Apps</h1>
+	<h1 class="judul">Tools</h1>
 
-	<main class="semua-app">
-		
+	<main class="semua-app" v-cloak>
+		<section class="app" v-for='x in tools'>
+			<a :href="'/tools/' + x.slug + '.html'" class="card">
+				<img :src="x.gambar" alt="" />
+				<p>{{ x.nama }}</p>
+			</a>
+		</section>
 	</main>
 
 	<script type="module">
-		import tools from '/tools.js'
+		import tools from '/data/tools.js'
 
 		PetiteVue.createApp({
-			
+			tools: tools.reverse()			
 		}).mount('.semua-app')
 	</script>
 
 	<style lang="windi">
 		h1 {
-			@apply text-center text-3xl text-red-700 py-3
+			@apply text-center text-3xl text-red-700 py-3 pb-5
+		}
+		.semua-app {
+			@apply grid gap-2 grid-cols-4 <sm:grid-cols-2;
+		}
+		.app {
+			@apply rounded overflow-hidden border border-gray-300
+		}
+		.app p {
+			@apply p-2 text-sm
 		}
 	</style>
 {% endblock %}

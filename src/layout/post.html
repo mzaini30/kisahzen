@@ -1,0 +1,38 @@
+{% extends './base.html' %}
+
+{% block body %}
+	<h1 class="judul judul-postingan">{% block judul %}{% endblock %}</h1>
+
+	<article class="artikel">
+		{% block isi %}{% endblock %}
+	</article>
+
+	<script>
+		document.querySelectorAll('.shiki code .line span').forEach(x => {
+			if (x.innerText == '+' || x.innerText == '-' || x.innerText == '!') {
+				x.style.display = 'none'
+			}
+		})
+	</script>
+
+	<style lang="windi">
+		.judul-postingan {
+			@apply text-center text-red-700 text-3xl py-3
+		}
+		.artikel {
+			@apply px-2
+		}
+		pre {
+			@apply overflow-auto p-2
+		}
+		blockquote {
+			@apply bg-gray-200 text-sm m-0
+		}
+		blockquote p {
+			@apply p-3 m-0
+		}
+		img {
+			@apply block mx-auto
+		}
+	</style>
+{% endblock %}

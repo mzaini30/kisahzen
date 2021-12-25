@@ -15,12 +15,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 
-	<style lang="windi">
-		.judul {
-			font-family: Sacramento, cursive;
-		}
-	</style>
-	
 </head>
 <body>
 	<section class="isinya">
@@ -29,7 +23,7 @@
 		</main>
 		<nav class="menu">
 
-			<a href="/" @click.prevent='console.log("Mantap")' class="tampil-menu" v-cloak>
+			<!-- <a href="/" @click.prevent='console.log("Mantap")' class="tampil-menu" v-cloak>
 				{% include '../icon/menu.html' %}
 			</a>
 
@@ -37,7 +31,7 @@
 				PetiteVue.createApp({
 					
 				}).mount('.tampil-menu')
-			</script>
+			</script> -->
 
 			<a href="/">
 				{% include '../icon/beranda.html' %}
@@ -72,6 +66,12 @@
 		}
 		.menu a svg {
 			@apply text-xl
+		}
+		.judul {
+			font-family: Sacramento, cursive;
+		}
+		img {
+			@apply max-w-full
 		}
 	</style>
 </body>

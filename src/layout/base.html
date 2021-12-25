@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2LTKGSC791"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-2LTKGSC791');
+	</script>
+	
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	{% block head %}{% endblock %}
@@ -8,7 +19,7 @@
 	<script>
 		let link = location.href
 		if (link.includes('https://blog-tekno-lagi.vercel.app')) {
-			link = link.replace('https://blog-tekno-lagi.vercel.app', 'http://kisahzen.com')
+			link = link.replace('https://blog-tekno-lagi.vercel.app', 'https://kisahzen.com')
 			location.href = link
 		}
 	</script>

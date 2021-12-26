@@ -1,1 +1,1 @@
-export default[{kategori:"Dev",subkategori:["Frontend"]},{kategori:"Renungan",subkategori:["Religi"]}];
+export default[{kategori:"Dev",subkategori:["Frontend","Text Editor"]},{kategori:"Renungan",subkategori:["Religi"]},{kategori:"Produktif",subkategori:["Menulis"]}];

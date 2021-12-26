@@ -11,4 +11,16 @@ export default [
 		slug: 'ibadah',
 		gambar: 'https://i.postimg.cc/RFJrCSyK/683e446beaad54541d2a1dc00b99eca7.jpg'
 	},
+	{
+		kategori: 'Text Editor',
+		judul: 'Preferences Emmet di Sublime Text untuk Coding Lebih Cepat',
+		slug: 'emmet',
+		gambar: 'https://i.postimg.cc/T1KKZDbg/Einstein-still-relevant-past-speed-of-light-News-in-Science-ABC-Science.jpg'
+	},
+	{
+		kategori: 'Menulis',
+		judul: 'Masih Ragu Buat Menulis? Inilah Beberapa Alasan yang Akan Menggerakkanmu Menulis Sekarang Juga',
+		slug: 'nulis',
+		gambar: 'https://i.postimg.cc/CMtjNhy9/aaron-burden-y02j-EX-B0-O0-unsplash.jpg'
+	},
 ]

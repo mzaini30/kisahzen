@@ -2,13 +2,20 @@ export default [
 	{
 		kategori: 'Dev',
 		subkategori: [
-			'Frontend'
+			'Frontend',
+			'Text Editor',
 		]
 	},
 	{
 		kategori: 'Renungan',
 		subkategori: [
 			'Religi'
+		]
+	},
+	{
+		kategori: 'Produktif',
+		subkategori: [
+			'Menulis'
 		]
 	},
 ]

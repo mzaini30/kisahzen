@@ -9,8 +9,9 @@
 	</article>
 
 	<script>
-		document.querySelectorAll('.shiki code .line span').forEach(x => {
-			if (x.innerText == '+' || x.innerText == '-' || x.innerText == '!') {
+		document.querySelectorAll('.shiki code .line span:first-child').forEach(x => {
+			// console.log(JSON.stringify(x.getAttribute("style")))
+			if ((x.innerText == '+' || x.innerText == '-' || x.innerText == '!') && x.getAttribute('style') == 'color: #ECEFF4') {
 				x.style.display = 'none'
 			}
 		})

@@ -24,9 +24,9 @@ export default [
 		gambar: 'https://i.postimg.cc/CMtjNhy9/aaron-burden-y02j-EX-B0-O0-unsplash.jpg'
 	},
 	{
-		kategori: 'Menulis',
+		kategori: 'Frontend',
 		judul: 'Kenapa async/await Itu Wajib Kita Gunakan di JavaScript?',
 		slug: 'async',
-		gambar: 'https://i.postimg.cc/CMtjNhy9/aaron-burden-y02j-EX-B0-O0-unsplash.jpg'
+		gambar: 'https://i.postimg.cc/QCCwgfZc/markus-spiske-cv-BBO4-Pz-WPg-unsplash.jpg'
 	},
 ]

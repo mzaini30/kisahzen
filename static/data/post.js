@@ -29,4 +29,10 @@ export default [
 		slug: 'async',
 		gambar: 'https://i.postimg.cc/QCCwgfZc/markus-spiske-cv-BBO4-Pz-WPg-unsplash.jpg'
 	},
+	{
+		kategori: 'Masak-masak',
+		judul: 'Tips Menggoreng Telor yang Smooth dan Soft',
+		slug: 'telor',
+		gambar: 'https://i.postimg.cc/zvQJ52Vv/Whats-App-Image-2021-12-28-at-13-17-59-1.jpg'
+	},
 ]

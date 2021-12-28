@@ -15,7 +15,8 @@ export default [
 	{
 		kategori: 'Produktif',
 		subkategori: [
-			'Menulis'
+			'Menulis',
+			'Masak-masak'
 		]
 	},
 ]

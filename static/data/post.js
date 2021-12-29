@@ -35,4 +35,10 @@ export default [
 		slug: 'telor',
 		gambar: 'https://i.postimg.cc/zvQJ52Vv/Whats-App-Image-2021-12-28-at-13-17-59-1.jpg'
 	},
+	{
+		kategori: 'Frontend',
+		judul: 'Menggunakan NPM Package di Browser',
+		slug: 'npm',
+		gambar: 'https://i.postimg.cc/NQXdvCpy/hasil-bumi.png'
+	},
 ]

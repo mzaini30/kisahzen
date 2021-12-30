@@ -41,4 +41,10 @@ export default [
 		slug: 'npm',
 		gambar: 'https://i.postimg.cc/NQXdvCpy/hasil-bumi.png'
 	},
+	{
+		kategori: 'Membaca',
+		judul: 'Yakin Pengetahuan Diraih dengan Membaca Buku?',
+		slug: 'buku',
+		gambar: 'https://i.postimg.cc/q488vwCZ/10-Quotes-for-the-Ultimate-Book-Lover.jpg'
+	},
 ]

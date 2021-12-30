@@ -1,0 +1,16 @@
+{% extends '../layout/base.html' %}
+
+{% block head %}
+	{% from '../macro/meta.html' import meta %}
+	{$ meta('Rapor ODOP', 'Catatan produktivitas nulis penghuni ODOP', 'https://i.postimg.cc/9f5vvLST/ODOP-with-slogan.jpg') $}
+{% endblock %}
+
+{% block body %}
+	<h1 class="judul">Rapor ODOP</h1>
+
+	<style lang="windi">
+		h1 {
+			@apply text-center text-red-700 text-3xl py-2
+		}
+	</style>
+{% endblock %}

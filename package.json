@@ -7,6 +7,7 @@
     "dev": "unmei dev",
     "build": "unmei build"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mzaini30/blog-tekno-lagi.git"

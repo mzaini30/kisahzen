@@ -11,4 +11,10 @@ export default [
 		kategori: 'Produktivitas',
 		gambar: 'https://i.postimg.cc/XqyGLnQc/1f705f24e1949ac2cf24c252e469af8d.jpg'
 	},
+	{
+		nama: 'Rapor ODOP',
+		slug: 'odop',
+		kategori: 'Produktivitas',
+		gambar: 'https://i.postimg.cc/9f5vvLST/ODOP-with-slogan.jpg'
+	},
 ]

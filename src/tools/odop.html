@@ -33,7 +33,9 @@
 
 		</section>
 
-		<button class="tambah">&plus;</button>
+		<section class="tambah">
+			{% include './odop/tambah.html' %}
+		</section>
 	</section>
 
 	<script>
@@ -84,6 +86,10 @@
 		}
 		.jumlah-kata {
 			@apply text-right
+		}
+
+		.tambah {
+			@apply text-4xl text-red-500 cursor-pointer select-none sticky bottom-10
 		}
 	</style>
 {% endblock %}

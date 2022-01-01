@@ -17,4 +17,10 @@ export default [
 		kategori: 'Produktivitas',
 		gambar: 'https://i.postimg.cc/9f5vvLST/ODOP-with-slogan.jpg'
 	},
+	{
+		nama: 'Tiny URL',
+		slug: 'tiny-url',
+		kategori: 'SEO',
+		gambar: 'https://i.postimg.cc/K8Lgr4mG/Tungsten-Lamp-Inspiration-Small-Icon-Cartoon-Cartoon-Icons-Lamp-Icons-Small-Icons-PNG-and-Vector.jpg'
+	},
 ]

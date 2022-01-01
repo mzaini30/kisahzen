@@ -47,4 +47,10 @@ export default [
 		slug: 'buku',
 		gambar: 'https://i.postimg.cc/q488vwCZ/10-Quotes-for-the-Ultimate-Book-Lover.jpg'
 	},
+	{
+		kategori: 'Frontend',
+		judul: 'Jangan Pakai Framework JavaScript!',
+		slug: 'framework',
+		gambar: 'https://i.postimg.cc/2SN8RH0m/Beyond-React-16-Time-Slicing-and-Suspense-API.png'
+	},
 ]

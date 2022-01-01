@@ -10,7 +10,9 @@
 
 	<main class="app" v-cloak>
 		<p>Masukkan URL</p>
-		<textarea name="" id="" cols="30" rows="10" v-model='input'></textarea>
+		<textarea name="" id="" cols="30" rows="10" placeholder="linkPertama
+linkKedua
+linkKetiga" v-model='input'></textarea>
 		<button @click='olah'>Olah</button>
 		<p>Hasil ({{ linkJadi }}/{{ semuaLink }})</p>
 		<textarea name="" id="" cols="30" rows="10" readonly v-model='output'></textarea>

@@ -8,12 +8,13 @@
 {% block body %}
 	<h1 class="judul">Tiny URL</h1>
 
-	<main class="app" v-cloak>
+	<main class="app" v-cloak @vue:mounted='cek'>
 		<p>Masukkan URL</p>
 		<textarea name="" id="" cols="30" rows="10" placeholder="linkPertama
 linkKedua
 linkKetiga" v-model='input'></textarea>
 		<button @click='olah'>Olah</button>
+		<button @click='stop'>Stop</button>
 		<button @click='reset'>Reset</button>
 		<p>Hasil ({{ linkJadi }}/{{ semuaLink }})</p>
 		<textarea name="" id="" cols="30" rows="10" readonly v-model='output'></textarea>
@@ -25,11 +26,21 @@ linkKetiga" v-model='input'></textarea>
 			semuaLink: 0,
 			input: '',
 			output: '',
+			cek(){
+				if (localStorage.tiny){
+					this.output = localStorage.tiny
+				}
+			},
+			stop(){
+				localStorage.tiny = this.output
+				location.reload()
+			},
 			reset(){
 				this.linkJadi = 0
 				this.semuaLink = 0
 				this.input = ''
 				this.output = ''
+				localStorage.removeItem('tiny')
 			},
 			async olah(){
 				let linknya = this.input.split('\n').filter(x => x)

@@ -28,11 +28,13 @@ linkKetiga" v-model='input'></textarea>
 			output: '',
 			cek(){
 				if (localStorage.cutt){
+					this.input = localStorage.cutt_input
 					this.output = localStorage.cutt
 				}
 			},
 			stop(){
 				localStorage.cutt = this.output
+				localStorage.cutt_input = this.input
 				location.reload()
 			},
 			reset(){
@@ -40,7 +42,8 @@ linkKetiga" v-model='input'></textarea>
 				this.semuaLink = 0
 				this.input = ''
 				this.output = ''
-				localStorage.removeItem('cutt')
+				localStorage.cutt = ''
+				localStorage.cutt_input = ''
 			},
 			async olah(){
 				let linknya = this.input.split('\n').filter(x => x)

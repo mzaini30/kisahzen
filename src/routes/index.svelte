@@ -57,9 +57,17 @@
   }
   .judulnya {
     @apply block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .kategori {
     @apply bg-gray-200 rounded px-2 inline-block mt-1;
     font-size: 10px;
+  }
+  img {
+    object-fit: cover;
+    @apply w-full h-[25vh] <sm:h-[20vh];
   }
 </style>

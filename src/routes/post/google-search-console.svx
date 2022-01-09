@@ -1,0 +1,6 @@
+---
+judul: Yuk Berkenalan dengan Google Search Console
+deskripsi: Google Search Console ini sangat bermanfaat buat para blogger
+gambar: https://www.exabytes.digital/wp-content/uploads/2018/02/Google-Search-Console-logo-300x180.jpg
+---
+

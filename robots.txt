@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow:
-
-Sitemap: https://kisahzen.com/sitemap.xml
-Sitemap: https://kisahzen.com/sitemap-unmei.xml

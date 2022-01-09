@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jangan Pakai Framework JavaScript!</title><link rel="icon" href="/gambar/icon.jpg" data-svelte="svelte-xek3wd"><link rel="preconnect" href="https://fonts.googleapis.com" data-svelte="svelte-xek3wd"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin data-svelte="svelte-xek3wd"><link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" data-svelte="svelte-xek3wd"><link rel="stylesheet" href="/code.css" data-svelte="svelte-xek3wd"><script async src="https://www.googletagmanager.com/gtag/js?id=G-2LTKGSC791" data-svelte="svelte-xek3wd"></script><script data-svelte="svelte-xek3wd">window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-2LTKGSC791");
+  </script><meta name="description" content="Website itu kan hanya perlu HTML dan CSS">
+
+<meta property="og:title" content="Jangan Pakai Framework JavaScript!">
+<meta property="og:description" content="Website itu kan hanya perlu HTML dan CSS">
+<meta property="og:image" content="https://i.postimg.cc/2SN8RH0m/Beyond-React-16-Time-Slicing-and-Suspense-API.png">
+
+<meta property="og:locale" content="id_ID">
+<meta property="og:type" content="article">
+
+<meta property="twitter:title" content="Jangan Pakai Framework JavaScript!">
+<meta property="twitter:description" content="Website itu kan hanya perlu HTML dan CSS">
+<meta property="twitter:image" content="https://i.postimg.cc/2SN8RH0m/Beyond-React-16-Time-Slicing-and-Suspense-API.png">
+
+<meta property="twitter:card" content="summary_large_image">
+
+		
+
+		<link rel="stylesheet" href="/_app/assets/start-808c0b29.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-090adf33.css">
+		<link rel="stylesheet" href="/_app/assets/blog-a40e8f8b.css">
+		<link rel="modulepreload" href="/_app/start-9976e2ec.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-ba00745c.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-3af7c54e.js">
+		<link rel="modulepreload" href="/_app/pages/post/framework.svx-00a5210f.js">
+		<link rel="modulepreload" href="/_app/chunks/blog-e31c46df.js">
+		<link rel="modulepreload" href="/_app/chunks/meta-44ee42b9.js">
+
+		<script type="module">
+			import { start } from "/_app/start-9976e2ec.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-3af7c54e.js"),
+						import("/_app/pages/post/framework.svx-00a5210f.js")
+					],
+					url: new URL("http://prerender/post/framework"),
+					params: {}
+				}
+			});
+		</script>
+  </head>
+  <body>
+    <div id="svelte">
+
+
+
+
+<main class="body svelte-16x5cjb"><section class="isinya svelte-16x5cjb"><main class="konten svelte-16x5cjb">
+
+<h1 class="judul judul-postingan svelte-1t27gkt">Jangan Pakai Framework JavaScript!</h1>
+
+<article class="artikel svelte-1t27gkt"><p>Apa sih inti dari suatu website? Kan cuma HTML dan CSS. Lalu, buat apa framework JavaScript seperti Svelte, Vue, dan React?</p>
+<p>Misalnya aja, kamu ingin membuat sebuah landing page, maka hanya perlu HTML dan CSS. Seperti ini:</p>
+<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+		<span class="token selector">h1</span> <span class="token punctuation">&#123;</span>
+			<span class="token property">font-size</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+			<span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+			<span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token selector">p</span> <span class="token punctuation">&#123;</span>
+			<span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+	</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Welcome to My Website<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Semoga betah ya main di sini...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<p>Tapi, kalau agak susah bermain styling, bisa lah dibantu dengan Windi:</p>
+<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>windi<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+		<span class="token selector">h1</span> <span class="token punctuation">&#123;</span>
+			<span class="token atrule"><span class="token rule">@apply</span> text-2xl font-bold text-center
+		<span class="token punctuation">&#125;</span>
+		p</span> <span class="token punctuation">&#123;</span>
+			@apply text-center
+		<span class="token punctuation">&#125;</span>
+	</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Welcome to My Website<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Semoga betah ya main di sini...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<p>Lalu, untuk behavior halaman, bisa kita gunakan Petite Vue. Jadi, partial hydration aja, nggak full.</p>
+<p>Kalau kita menggunakan framework JavaScript, kekurangannya adalah:</p>
+<ul><li>full hydration</li>
+<li>size halaman yang besar</li>
+<li>halaman akan terasa berat</li></ul>
+<p>Oke, mari kita bahas.</p>
+<h2>Full Hydration</h2>
+<p>Ciri khas dari framework JavaScript adalah full hydration. Artinya, ketika ada perubahan suatu elemen di halaman, maka keseluruhan halaman akan berubah.</p>
+<p>Intinya seperti ini:</p>
+<p>Ketika ada halaman:</p>
+<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Namaku adalah &#123;&#123; nama &#125;&#125;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>nama<span class="token punctuation">'</span></span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<p>Maka, dia akan berubah-ubah di dalam tag p, menyesuaikan isi dari tag input:</p>
+<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Namaku adalah Zen<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Zen<span class="token punctuation">"</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>nama<span class="token punctuation">'</span></span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<p>Sampai di sini mungkin nggak ada masalah dan terlihat bagus. Namun, ada di framework JavaScript itu sebuah teknologi bernama Server Side Rendering (SSR). Kalau Server Side Rendering ini, dia akan mereturn tag-tag HTML, daripada sebuah tag <code>.app</code>.</p>
+<p>Kalau tanpa SSR:</p>
+<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>app<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>app.js<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<p>Dengan SSR:</p>
+<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>app<span class="token punctuation">'</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Namaku adalah Zen<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Zen<span class="token punctuation">"</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>nama<span class="token punctuation">'</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>app.js<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<p>Kelihatannya kan kalau pakai SSR ini, dia jadi HTML biasa. Padahal, yang sebenarnya terjadi adalah, ketika <code>app.js</code> termuat, maka isi dari <code>.app</code> akan kosong dan terisi dengan hasil dari <code>app.js</code>. Maka, misalnya di dalam <code>.app</code> kita isi sebuah elemen HTML, maka elemen HTML itu akan terhapus kalau <code>app.js</code> dimuat.</p>
+<p>Maka, kita nggak bisa bermain Adsense dengan framework JavaScript. Bisa sih main Adsense, tapi nggak bisa iklan otomatis karena semua isi dari <code>.app</code> akan kembali kosong saat <code>app.js</code> termuat dan terisi dengan hasil dari <code>app.js</code>. Kan, kode Adsense yang iklan otomatis itu bukan merupakan hasil dari <code>app.js</code>, pasti diabaikan.</p>
+<p>Lalu, Google juga nggak bisa merayapi halaman tersebut dengan sempurna karena harus menunggu hasil dari <code>app.js</code> dulu. Makanya, yang tampil di Google itu biasa isi dari meta description jika kita menggunakan framework JavaScript.</p>
+<h2>Size Halaman yang Besar</h2>
+<p>Kalau dulu, yang namanya framework JavaScript itu akan memuat sebuah <code>bundle.js</code>. Sekarang kan ada partial bundle, seperti <code>index.js</code>, <code>about.js</code>, lalu apakah sizenya menjadi kecil?</p>
+<p>Ya nggak juga sih.</p>
+<p>Misal kita di <code>index</code>, maka yang dimuat adalah <code>index.js</code>. Ketika kita klik <code>about</code>, kemudian akan memuat <code>about.js</code>. Jadi kan dia ditumpuk-tumpuk file JavaScriptnya. Bertambah terus sizenya dengan semakin banyak kita mengklik link. Jadinya, lama kelamaan halaman yang kita buka akan semakin berat.</p>
+<h2>Halaman Akan Terasa Berat</h2>
+<p>Kalau kita menggunakan SSG, misal ada halaman yang perlu dirender dengan Markdown, maka dia akan menampilkan hasil dari Markdownnya menjadi HTML biasa. Kalau dengan framework JavaScript, dia akan memuat library Markdown setiap kali dimuat.</p></article>
+
+<div><script>document
+      .querySelectorAll(".shiki code .line span:first-child")
+      .forEach((x) => {
+        if (
+          (x.innerText == "+" || x.innerText == "-" || x.innerText == "!") &&
+          x.getAttribute("style") == "color: #ECEFF4"
+        ) {
+          x.style.display = "none";
+        }
+      });
+  </script>
+</div></main>
+
+    <nav class="menu svelte-16x5cjb"><a href="/" class="svelte-16x5cjb"><svg width="1em" height="1em" viewBox="0 0 20 20"><path d="M1 1h18v2H1V1zm0 8h18v2H1V9zm0 8h18v2H1v-2zM1 5h18v2H1V5zm0 8h18v2H1v-2z" fill="currentColor"></path></svg>
+        <span class="svelte-16x5cjb">menu</span></a>
+      <a href="/tema" sveltekit:prefetch class="svelte-16x5cjb"><svg width="1em" height="1em" viewBox="0 0 20 20"><path d="M20 14v4a2 2 0 0 1-2 2h-4v-2a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2H6a2 2 0 0 1-2-2v-4H2a2 2 0 0 1-2-2a2 2 0 0 1 2-2h2V6c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v4h-2a2 2 0 0 0-2 2a2 2 0 0 0 2 2h2z" fill="currentColor"></path></svg>
+        <span class="svelte-16x5cjb">tema</span></a>
+      <a href="/" sveltekit:prefetch class="svelte-16x5cjb"><svg width="1em" height="1em" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z" fill="currentColor"></path></svg>
+        <span class="svelte-16x5cjb">home</span></a>
+      <a href="/tools" sveltekit:prefetch class="svelte-16x5cjb"><svg width="1em" height="1em" viewBox="0 0 20 20"><path d="M0 0h9v9H0V0zm2 2v5h5V2H2zm-2 9h9v9H0v-9zm2 2v5h5v-5H2zm9-13h9v9h-9V0zm2 2v5h5V2h-5zm-2 9h9v9h-9v-9zm2 2v5h5v-5h-5z" fill="currentColor"></path></svg>
+        <span class="svelte-16x5cjb">app</span></a>
+      <a href="/profil" sveltekit:prefetch class="svelte-16x5cjb"><svg width="1em" height="1em" viewBox="0 0 20 20"><path d="M5 5a5 5 0 0 1 10 0v2A5 5 0 0 1 5 7V5zM0 16.68A19.9 19.9 0 0 1 10 14c3.64 0 7.06.97 10 2.68V20H0v-3.32z" fill="currentColor"></path></svg>
+        <span class="svelte-16x5cjb">me</span></a>
+
+      </nav></section>
+</main>
+
+</div>
+  </body>
+</html>

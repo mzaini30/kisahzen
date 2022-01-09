@@ -86,7 +86,8 @@
     @apply grid gap-3;
   }
   .tulisan-lainnya {
-    @apply w-full rounded rounded-xl border !no-underline overflow-hidden flex;
+    @apply w-full rounded rounded-xl border overflow-hidden flex;
+    text-decoration: none !important;
   }
   .tulisan-lainnya img {
     @apply w-23 h-23 rounded-none flex-grow-0 flex-shrink-0;

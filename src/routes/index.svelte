@@ -2,17 +2,22 @@
   import Meta from "$lib/meta.svelte";
   import semua_post from "/src/post.js";
   import { page } from "$app/stores";
+  import { browser } from "$app/env";
 
   let post = semua_post;
 
   function cek_kategori() {
-    if ($page.url.searchParams.get("kategori")) {
-      let kategorinya = $page.url.searchParams.get("kategori");
+    if (browser && location.search) {
+      let kategorinya = decodeURIComponent(
+        location.search.replace("?kategori=", "")
+      );
+      console.log(kategorinya);
       post = semua_post.filter((x) => x.kategori == kategorinya);
     } else {
       post = semua_post;
     }
   }
+  cek_kategori();
 
   $: if ($page.url.searchParams.get("kategori")) {
     cek_kategori();

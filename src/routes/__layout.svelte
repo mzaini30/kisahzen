@@ -56,7 +56,7 @@
         <Icon_beranda />
         <span>home</span>
       </a>
-      <a href="/tools" sveltekit:prefetch>
+      <a href="/app" sveltekit:prefetch>
         <Icon_tools />
         <span>app</span>
       </a>

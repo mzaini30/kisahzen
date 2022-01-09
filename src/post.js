@@ -1,11 +1,11 @@
 export default [
-  // {
-  //   kategori: "Menulis",
-  //   judul: "Yuk Berkenalan dengan Google Search Console",
-  //   slug: "google-search-console",
-  //   gambar:
-  //     "https://www.exabytes.digital/wp-content/uploads/2018/02/Google-Search-Console-logo-300x180.jpg",
-  // },
+  {
+    kategori: "Menulis",
+    judul: "Yuk Berkenalan dengan Google Search Console",
+    slug: "google-search-console",
+    gambar:
+      "https://www.exabytes.digital/wp-content/uploads/2018/02/Google-Search-Console-logo-300x180.jpg",
+  },
   {
     kategori: "Frontend",
     judul: "Jangan Pakai Framework JavaScript!",

@@ -1,8 +1,13 @@
 <script>
   import Meta from "$lib/meta.svelte";
+  import semua_postingan from "/src/post.js";
+  import { acak } from "kumpulan-tools";
   export let judul;
   export let deskripsi;
   export let gambar;
+
+  let ambil_postingan = [...semua_postingan];
+  let postingan_acak = acak(ambil_postingan).splice(0, 10);
 </script>
 
 <svelte:head>
@@ -14,6 +19,15 @@
 
 <article class="artikel">
   <slot />
+
+  <nav class="wadah-postingan-lainnya">
+    {#each postingan_acak as x}
+      <a href="/post/{x.slug}" sveltekit:prefetch class="tulisan-lainnya">
+        <img src={x.gambar} alt="" />
+        <div><p>{x.judul}</p></div>
+      </a>
+    {/each}
+  </nav>
 </article>
 
 <div>
@@ -67,5 +81,24 @@
   }
   .artikel :global(ol li) {
     @apply list-decimal;
+  }
+  .wadah-postingan-lainnya {
+    @apply grid gap-3;
+  }
+  .tulisan-lainnya {
+    @apply w-full rounded rounded-xl border !no-underline overflow-hidden flex;
+  }
+  .tulisan-lainnya img {
+    @apply w-23 h-23 rounded-none flex-grow-0 flex-shrink-0;
+    object-fit: cover;
+  }
+  .tulisan-lainnya div {
+    @apply m-3 text-sm flex-grow flex-shrink;
+  }
+  .tulisan-lainnya p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 </style>

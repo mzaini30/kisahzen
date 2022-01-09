@@ -7,6 +7,8 @@ specifiers:
   mdsvex: ^0.9.8
   prettier: ^2.5.1
   prettier-plugin-svelte: ^2.5.1
+  recursive-readdir-sync: ^1.0.6
+  sitemap-manager: ^2.1.0
   svelte: ^3.44.0
   vite-plugin-windicss: ^1.6.1
 
@@ -15,6 +17,8 @@ dependencies:
   mdsvex: 0.9.8_svelte@3.45.0
   prettier: 2.5.1
   prettier-plugin-svelte: 2.5.1_prettier@2.5.1+svelte@3.45.0
+  recursive-readdir-sync: 1.0.6
+  sitemap-manager: 2.1.0
   vite-plugin-windicss: 1.6.1
 
 devDependencies:
@@ -540,6 +544,10 @@ packages:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: false
 
+  /recursive-readdir-sync/1.0.6:
+    resolution: {integrity: sha1-Hb9tMvPFu4083pemxYjVR6nhPVY=}
+    dev: false
+
   /require-relative/0.8.7:
     resolution: {integrity: sha1-eZlTn8ngR6N5KPoZb44VY9q9Nt4=}
     dev: true
@@ -578,6 +586,12 @@ packages:
     dependencies:
       mri: 1.2.0
     dev: true
+
+  /sitemap-manager/2.1.0:
+    resolution: {integrity: sha512-Gj5zMtkastJi7Bt5qkYNp6lWhPy86+WVHuGjRGAQ6BRr9X2/g31kJNBza153sgVxvGwqwEhhtRHSnlsMT83/jg==}
+    dependencies:
+      xml: 1.0.1
+    dev: false
 
   /source-map-js/1.0.1:
     resolution: {integrity: sha512-4+TN2b3tqOCd/kaGRJ/sTYA0tR0mdXx26ipdolxcwtJVqEnqNYvlCAt1q3ypy4QMlYus+Zh34RNtYLoq2oQ4IA==}
@@ -672,4 +686,8 @@ packages:
     resolution: {integrity: sha512-YieqWaXiwPu0JJoB7z03RXdjZjQQJtMZAeXUXu/j3JXSMhIgV/2rUXu4Q7QrworRlbaASZlFhxjnL/78aAty+Q==}
     engines: {node: '>= 12'}
     hasBin: true
+    dev: false
+
+  /xml/1.0.1:
+    resolution: {integrity: sha1-eLpyAgApxbyHuKgaPPzXS0ovweU=}
     dev: false

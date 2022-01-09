@@ -32,6 +32,15 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Buat Folder Public
+        run: mkdir public
+
+      - name: Generate Sitemap
+        run: node generate-sitemap.js
+
+      - name: Pindahkan Sitemap
+        run: mv public/sitemap-unmei.xml build/sitemap-unmei.xml && mv public/sitemap.xml build/sitemap.xml && mv public/sitemap.xsl build/sitemap.xsl
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

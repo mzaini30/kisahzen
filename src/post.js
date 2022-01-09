@@ -4,7 +4,7 @@ export default [
     judul: "Yuk Berkenalan dengan Google Search Console",
     slug: "google-search-console",
     gambar:
-      "https://www.exabytes.digital/wp-content/uploads/2018/02/Google-Search-Console-logo-300x180.jpg",
+      "https://i.postimg.cc/yNQ5PDgH/image.png",
   },
   {
     kategori: "Frontend",

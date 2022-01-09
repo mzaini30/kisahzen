@@ -1,4 +1,0 @@
-https://scrappy-php.herokuapp.com/?url=
-https://api.allorigins.win/raw?url=
-https://cors.eu.org/
-https://cors-proxy.tk/?url=

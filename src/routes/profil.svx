@@ -1,0 +1,13 @@
+---
+judul: Profil Zen
+---
+
+# Tentang Zen
+
+Aku adalah Zen, penulis dari blog yang sangat sederhana ini. Tujuanku menulis blog ini adalah untuk berbagi pengetahuan. Aku tau sih ada banyak pengetahuan yang tersebar di dunia ini. Oleh karena itu, aku harus mewariskannya kepada generasi setelahku.
+
+<style>
+	h1:not(.judul) {
+		@apply text-center text-2xl font-bold
+	}
+</style>

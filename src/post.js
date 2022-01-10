@@ -1,5 +1,12 @@
 export default [
   {
+    kategori: "Membaca",
+    judul: "Apakah Menghafal Quran Susah?",
+    slug: "menghafal-quran",
+    gambar:
+      "https://www.quran-edu.com/wp-content/uploads/2021/01/Online-Quran-Academy-Quran-Memorization-med.jpg",
+  },
+  {
     kategori: "Menulis",
     judul: "Yuk Berkenalan dengan Google Search Console",
     slug: "google-search-console",

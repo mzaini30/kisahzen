@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-4d03ecd0.js",
+    "file": "start-3b78e985.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -195,7 +195,7 @@
     ]
   },
   "src/routes/post/brave.svx": {
-    "file": "pages/post/brave.svx-879daa8a.js",
+    "file": "pages/post/brave.svx-20c6ff58.js",
     "src": "src/routes/post/brave.svx",
     "isEntry": true,
     "isDynamicEntry": true,

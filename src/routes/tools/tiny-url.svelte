@@ -40,10 +40,10 @@
     semua_link = linknya.length;
 
     for (let x of linknya) {
-      let jadi = await fetch(
-        `https://tinyurl.com/api-create.php?url=${x}`
-      ).catch((x) => (output += "Fetch failed\n"));
-      jadi = await jadi.text();
+      let jadi = await fetch(`https://tinyurl.com/api-create.php?url=${x}`)
+        .then((x) => x.text())
+        .catch((x) => "Fetch failed");
+      // jadi = await jadi.text();
       output += jadi + "\n";
       if (jadi) {
         link_jadi++;

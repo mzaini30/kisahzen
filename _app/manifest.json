@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-fff1576b.js",
+    "file": "start-4d03ecd0.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -20,6 +20,7 @@
       "src/routes/post/no-cors.svx",
       "src/routes/post/ibadah.svx",
       "src/routes/post/async.svx",
+      "src/routes/post/brave.svx",
       "src/routes/post/emmet.svx",
       "src/routes/post/nulis.svx",
       "src/routes/post/telor.svx",
@@ -34,7 +35,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-61b1a873.js",
+    "file": "pages/__layout.svelte-85a3c19a.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -55,14 +56,14 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-edd4c610.js",
+    "file": "pages/index.svelte-f38ca08f.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js",
+      "_post-ccbe8d5a.js",
       "_stores-0a1d091f.js"
     ],
     "css": [
@@ -70,26 +71,26 @@
     ]
   },
   "src/routes/profil.svx": {
-    "file": "pages/profil.svx-dd7d5d70.js",
+    "file": "pages/profil.svx-f8bf8eb3.js",
     "src": "src/routes/profil.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-8a4e39e8.js",
+      "_blog-378e2c85.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js"
+      "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/semua.svelte": {
-    "file": "pages/semua.svelte-36610577.js",
+    "file": "pages/semua.svelte-5e50bc05.js",
     "src": "src/routes/semua.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js",
+      "_post-ccbe8d5a.js",
       "_stores-0a1d091f.js"
     ],
     "css": [
@@ -122,147 +123,159 @@
     ]
   },
   "src/routes/post/google-search-console.svx": {
-    "file": "pages/post/google-search-console.svx-2ac91906.js",
+    "file": "pages/post/google-search-console.svx-e7f781c9.js",
     "src": "src/routes/post/google-search-console.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-8a4e39e8.js",
+      "_blog-378e2c85.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js"
+      "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/menghafal-quran.svx": {
-    "file": "pages/post/menghafal-quran.svx-15d93e85.js",
+    "file": "pages/post/menghafal-quran.svx-a4af2ba3.js",
     "src": "src/routes/post/menghafal-quran.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-8a4e39e8.js",
+      "_blog-378e2c85.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js"
+      "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/framework.svx": {
-    "file": "pages/post/framework.svx-939cb3a9.js",
+    "file": "pages/post/framework.svx-77aa2619.js",
     "src": "src/routes/post/framework.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-8a4e39e8.js",
+      "_blog-378e2c85.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js"
+      "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/no-cors.svx": {
-    "file": "pages/post/no-cors.svx-0278fcbb.js",
+    "file": "pages/post/no-cors.svx-82d75171.js",
     "src": "src/routes/post/no-cors.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-8a4e39e8.js",
+      "_blog-378e2c85.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js"
+      "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/ibadah.svx": {
-    "file": "pages/post/ibadah.svx-bd314a37.js",
+    "file": "pages/post/ibadah.svx-c26e673d.js",
     "src": "src/routes/post/ibadah.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-8a4e39e8.js",
+      "_blog-378e2c85.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js"
+      "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/async.svx": {
-    "file": "pages/post/async.svx-0ab2a079.js",
+    "file": "pages/post/async.svx-1cdbb6c6.js",
     "src": "src/routes/post/async.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-8a4e39e8.js",
+      "_blog-378e2c85.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js"
+      "_post-ccbe8d5a.js"
+    ]
+  },
+  "src/routes/post/brave.svx": {
+    "file": "pages/post/brave.svx-879daa8a.js",
+    "src": "src/routes/post/brave.svx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-44dfed64.js",
+      "_blog-378e2c85.js",
+      "_meta-cba24769.js",
+      "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/emmet.svx": {
-    "file": "pages/post/emmet.svx-58110a9d.js",
+    "file": "pages/post/emmet.svx-f5f8061d.js",
     "src": "src/routes/post/emmet.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-8a4e39e8.js",
+      "_blog-378e2c85.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js"
+      "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/nulis.svx": {
-    "file": "pages/post/nulis.svx-0b8f7548.js",
+    "file": "pages/post/nulis.svx-a9dc0dfb.js",
     "src": "src/routes/post/nulis.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-8a4e39e8.js",
+      "_blog-378e2c85.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js"
+      "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/telor.svx": {
-    "file": "pages/post/telor.svx-7f3a5642.js",
+    "file": "pages/post/telor.svx-2f396097.js",
     "src": "src/routes/post/telor.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-8a4e39e8.js",
+      "_blog-378e2c85.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js"
+      "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/buku.svx": {
-    "file": "pages/post/buku.svx-12fccac8.js",
+    "file": "pages/post/buku.svx-6245e7ad.js",
     "src": "src/routes/post/buku.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-8a4e39e8.js",
+      "_blog-378e2c85.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js"
+      "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/npm.svx": {
-    "file": "pages/post/npm.svx-47620f7f.js",
+    "file": "pages/post/npm.svx-74e3cee2.js",
     "src": "src/routes/post/npm.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-8a4e39e8.js",
+      "_blog-378e2c85.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js"
+      "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/tema/jualan.svx": {
-    "file": "pages/tema/jualan.svx-8262b6ae.js",
+    "file": "pages/tema/jualan.svx-d248bbfd.js",
     "src": "src/routes/tema/jualan.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-8a4e39e8.js",
+      "_blog-378e2c85.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js"
+      "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/tema.svelte": {
@@ -302,8 +315,8 @@
       "_vendor-44dfed64.js"
     ]
   },
-  "_post-bf3b25c3.js": {
-    "file": "chunks/post-bf3b25c3.js"
+  "_post-ccbe8d5a.js": {
+    "file": "chunks/post-ccbe8d5a.js"
   },
   "_stores-0a1d091f.js": {
     "file": "chunks/stores-0a1d091f.js",
@@ -311,12 +324,12 @@
       "_vendor-44dfed64.js"
     ]
   },
-  "_blog-8a4e39e8.js": {
-    "file": "chunks/blog-8a4e39e8.js",
+  "_blog-378e2c85.js": {
+    "file": "chunks/blog-378e2c85.js",
     "imports": [
       "_vendor-44dfed64.js",
       "_meta-cba24769.js",
-      "_post-bf3b25c3.js"
+      "_post-ccbe8d5a.js"
     ],
     "css": [
       "assets/blog-95a98bc1.css"

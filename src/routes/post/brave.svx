@@ -56,6 +56,8 @@ Jadi, kalau misalnya ada pengunjung blogmu yang suka banget sama konten yang kam
 
 ## Kenapa Sih Brave Ini Sensi Banget Sama Iklan?
 
+![Laporan pemblokir iklan Brave](https://i.postimg.cc/Z5nW6Lz0/Screenshot-2022-01-11-09-17-34-04.png)
+
 Nggak cuma iklan yang diblokir. Bahkan, script pelacakan seperti Google Analytics juga diblokir. Kenapa? Karena Brave ini berfokus pada privasi.
 
 Jadi, semua potensi pembocoran privasi akan diblokir. Saking mendukungnya sama pelindungan privasi, Brave juga menyediakan protocol Tor. Sehingga website-website yang berdomain .onion bisa dibuka di Brave. 

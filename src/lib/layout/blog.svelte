@@ -106,6 +106,6 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    @apply my-0
+    @apply my-0;
   }
 </style>

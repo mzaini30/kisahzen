@@ -7,6 +7,7 @@
   export let gambar;
 
   let ambil_postingan = [...semua_postingan];
+  ambil_postingan = ambil_postingan.filter((x) => x.judul != judul);
   let postingan_acak = acak(ambil_postingan).splice(0, 10);
 </script>
 

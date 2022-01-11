@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-3b78e985.js",
+    "file": "start-ebf7cbf8.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -71,13 +71,13 @@
     ]
   },
   "src/routes/profil.svx": {
-    "file": "pages/profil.svx-f8bf8eb3.js",
+    "file": "pages/profil.svx-72c4a5a6.js",
     "src": "src/routes/profil.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-378e2c85.js",
+      "_blog-77b62fc6.js",
       "_meta-cba24769.js",
       "_post-ccbe8d5a.js"
     ]
@@ -123,157 +123,157 @@
     ]
   },
   "src/routes/post/google-search-console.svx": {
-    "file": "pages/post/google-search-console.svx-e7f781c9.js",
+    "file": "pages/post/google-search-console.svx-52c047e9.js",
     "src": "src/routes/post/google-search-console.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-378e2c85.js",
+      "_blog-77b62fc6.js",
       "_meta-cba24769.js",
       "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/menghafal-quran.svx": {
-    "file": "pages/post/menghafal-quran.svx-a4af2ba3.js",
+    "file": "pages/post/menghafal-quran.svx-890636e7.js",
     "src": "src/routes/post/menghafal-quran.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-378e2c85.js",
+      "_blog-77b62fc6.js",
       "_meta-cba24769.js",
       "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/framework.svx": {
-    "file": "pages/post/framework.svx-77aa2619.js",
+    "file": "pages/post/framework.svx-ed5d00d4.js",
     "src": "src/routes/post/framework.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-378e2c85.js",
+      "_blog-77b62fc6.js",
       "_meta-cba24769.js",
       "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/no-cors.svx": {
-    "file": "pages/post/no-cors.svx-82d75171.js",
+    "file": "pages/post/no-cors.svx-0d4ce4e3.js",
     "src": "src/routes/post/no-cors.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-378e2c85.js",
+      "_blog-77b62fc6.js",
       "_meta-cba24769.js",
       "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/ibadah.svx": {
-    "file": "pages/post/ibadah.svx-c26e673d.js",
+    "file": "pages/post/ibadah.svx-df2a767f.js",
     "src": "src/routes/post/ibadah.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-378e2c85.js",
+      "_blog-77b62fc6.js",
       "_meta-cba24769.js",
       "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/async.svx": {
-    "file": "pages/post/async.svx-1cdbb6c6.js",
+    "file": "pages/post/async.svx-c921bd71.js",
     "src": "src/routes/post/async.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-378e2c85.js",
+      "_blog-77b62fc6.js",
       "_meta-cba24769.js",
       "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/brave.svx": {
-    "file": "pages/post/brave.svx-20c6ff58.js",
+    "file": "pages/post/brave.svx-93bc7aec.js",
     "src": "src/routes/post/brave.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-378e2c85.js",
+      "_blog-77b62fc6.js",
       "_meta-cba24769.js",
       "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/emmet.svx": {
-    "file": "pages/post/emmet.svx-f5f8061d.js",
+    "file": "pages/post/emmet.svx-a8cdbb48.js",
     "src": "src/routes/post/emmet.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-378e2c85.js",
+      "_blog-77b62fc6.js",
       "_meta-cba24769.js",
       "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/nulis.svx": {
-    "file": "pages/post/nulis.svx-a9dc0dfb.js",
+    "file": "pages/post/nulis.svx-4a7ef157.js",
     "src": "src/routes/post/nulis.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-378e2c85.js",
+      "_blog-77b62fc6.js",
       "_meta-cba24769.js",
       "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/telor.svx": {
-    "file": "pages/post/telor.svx-2f396097.js",
+    "file": "pages/post/telor.svx-65787bd9.js",
     "src": "src/routes/post/telor.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-378e2c85.js",
+      "_blog-77b62fc6.js",
       "_meta-cba24769.js",
       "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/buku.svx": {
-    "file": "pages/post/buku.svx-6245e7ad.js",
+    "file": "pages/post/buku.svx-634ffc8e.js",
     "src": "src/routes/post/buku.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-378e2c85.js",
+      "_blog-77b62fc6.js",
       "_meta-cba24769.js",
       "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/post/npm.svx": {
-    "file": "pages/post/npm.svx-74e3cee2.js",
+    "file": "pages/post/npm.svx-541509c1.js",
     "src": "src/routes/post/npm.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-378e2c85.js",
+      "_blog-77b62fc6.js",
       "_meta-cba24769.js",
       "_post-ccbe8d5a.js"
     ]
   },
   "src/routes/tema/jualan.svx": {
-    "file": "pages/tema/jualan.svx-d248bbfd.js",
+    "file": "pages/tema/jualan.svx-46b19ed5.js",
     "src": "src/routes/tema/jualan.svx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-44dfed64.js",
-      "_blog-378e2c85.js",
+      "_blog-77b62fc6.js",
       "_meta-cba24769.js",
       "_post-ccbe8d5a.js"
     ]
@@ -324,8 +324,8 @@
       "_vendor-44dfed64.js"
     ]
   },
-  "_blog-378e2c85.js": {
-    "file": "chunks/blog-378e2c85.js",
+  "_blog-77b62fc6.js": {
+    "file": "chunks/blog-77b62fc6.js",
     "imports": [
       "_vendor-44dfed64.js",
       "_meta-cba24769.js",

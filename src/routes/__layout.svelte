@@ -6,6 +6,7 @@
   import Icon_tools from "$lib/icon/tools.svelte";
   import Icon_profil from "$lib/icon/profil.svelte";
   import kategori_post from "/src/kategori-post.js";
+  import { browser } from "$app/env";
 
   let is_menu = false;
   let kategori = kategori_post.sort((a, b) =>
@@ -76,12 +77,27 @@
             <section class="menu-menu">
               <p>
                 <a
+                  href="/"
+                  class="hover:underline uppercase font-bold"
+                  on:click|preventDefault={() => {
+                    is_menu = false;
+                    if (browser) {
+                      const cari = prompt("Cari apa?");
+                      if (cari) {
+                        location.href = `/cari?q=${encodeURIComponent(cari)}`;
+                      }
+                    }
+                  }}>Cari</a
+                >
+              </p>
+              <!-- <p>
+                <a
                   href="/semua"
                   on:click={() => (is_menu = false)}
                   sveltekit:prefetch
                   class="hover:underline">Semua Tulisan</a
                 >
-              </p>
+              </p> -->
               {#each kategori as x}
                 <p class="uppercase mb-1"><strong>{x.kategori}</strong></p>
                 <ol>

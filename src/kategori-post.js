@@ -1,14 +1,22 @@
 export default [
   {
-    kategori: "Dev",
-    subkategori: ["Frontend", "Text Editor"],
+    kategori: "Bisnis",
+    subkategori: ["Tips Bisnis"],
   },
   {
-    kategori: "Renungan",
-    subkategori: ["Religi"],
+    kategori: "Teknologi",
+    subkategori: ["Web Development"],
   },
   {
-    kategori: "Produktif",
-    subkategori: ["Menulis", "Masak-masak", "Membaca", "Bisnis"],
+    kategori: "Hobi",
+    subkategori: ["Menulis", "Membaca", "Masak-masak"],
   },
+  {
+    kategori: "Kesehatan",
+    subkategori: ["Spiritual"],
+  },
+  // {
+  //   kategori: 'Properti',
+  //   subkategori: []
+  // },
 ];

@@ -6,6 +6,7 @@
   let semua_link = 0;
   let input = "";
   let output = "";
+  let link_terakhir = "";
 
   function cek() {
     if (browser && localStorage.tiny) {
@@ -43,6 +44,7 @@
       let jadi = await fetch(`https://tinyurl.com/api-create.php?url=${x}`)
         .then((x) => x.text())
         .catch((x) => "Fetch failed");
+      link_terakhir = jadi;
       // jadi = await jadi.text();
       output += jadi + "\n";
       if (jadi) {
@@ -78,7 +80,7 @@ linkKetiga"
   <button on:click={olah}>Olah</button>
   <button on:click={stop}>Stop</button>
   <button on:click={reset}>Reset</button>
-  <p>Hasil ({link_jadi}/{semua_link})</p>
+  <p>Hasil ({link_jadi}/{semua_link}) &lt;{link_terakhir}&gt;</p>
   <textarea name="" id="" cols="30" rows="10" readonly bind:value={output} />
 </main>
 

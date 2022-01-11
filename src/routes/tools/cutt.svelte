@@ -6,6 +6,7 @@
   let semua_link = 0;
   let input = "";
   let output = "";
+  let link_terakhir = "";
 
   function cek() {
     if (browser && localStorage.cutt) {
@@ -43,6 +44,7 @@
         .then((x) => x.text())
         .catch((x) => "Fetch failed");
       // jadi = await jadi.text();
+      link_terakhir = jadi;
       output += jadi + "\n";
       if (jadi) {
         link_jadi++;
@@ -77,7 +79,7 @@ linkKetiga"
   <button on:click={olah}>Olah</button>
   <button on:click={stop}>Stop</button>
   <button on:click={reset}>Reset</button>
-  <p>Hasil ({link_jadi}/{semua_link})</p>
+  <p>Hasil ({link_jadi}/{semua_link}) &lt;{link_terakhir}&gt;</p>
   <textarea name="" id="" cols="30" rows="10" readonly bind:value={output} />
 </main>
 

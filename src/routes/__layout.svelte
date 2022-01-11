@@ -24,14 +24,22 @@
     }
   }
 
-  function tombol_cari(x) {
-    if (x.keyCode == 191) {
+  function tombol(x) {
+    let kunci = x.keyCode
+
+    if (kunci == 191) { // /
       mau_mencari();
+    }
+    if (kunci == 79) { // o
+      is_menu = true
+    }
+    if (kunci == 27) { // Esc
+      is_menu = false
     }
   }
 </script>
 
-<svelte:window on:keydown={tombol_cari} />
+<svelte:window on:keydown={tombol} />
 
 <svelte:head>
   <link rel="icon" href="/gambar/icon.jpg" />
@@ -126,6 +134,29 @@
   </section>
 </main>
 
+<table class="shortcut">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Command</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>o</td>
+      <td>Open Sidebar Menu</td>
+    </tr>
+    <tr>
+      <td>Esc</td>
+      <td>Close Sidebar Menu</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Search</td>
+    </tr>
+  </tbody>
+</table>
+
 <style lang="windi">
   :global(*) {
     @apply focus:!outline-none;
@@ -176,5 +207,12 @@
   }
   .menu-menu {
     @apply p-3;
+  }
+
+  .shortcut {
+    @apply <sm:hidden fixed top-0 right-0 text-sm bg-white/50
+  }
+  .shortcut :where(td, th) {
+    @apply border border-gray-200 px-1
   }
 </style>

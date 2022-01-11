@@ -25,16 +25,19 @@
   }
 
   function tombol(x) {
-    let kunci = x.keyCode
+    let kunci = x.keyCode;
 
-    if (kunci == 191) { // /
+    if (kunci == 191) {
+      // /
       mau_mencari();
     }
-    if (kunci == 79) { // o
-      is_menu = true
+    if (kunci == 79) {
+      // o
+      is_menu = true;
     }
-    if (kunci == 27) { // Esc
-      is_menu = false
+    if (kunci == 27) {
+      // Esc
+      is_menu = false;
     }
   }
 </script>
@@ -210,9 +213,9 @@
   }
 
   .shortcut {
-    @apply <sm:hidden fixed top-0 right-0 text-sm bg-white/50
+    @apply <sm:hidden fixed top-0 right-0 text-sm bg-white/50;
   }
   .shortcut :where(td, th) {
-    @apply border border-gray-200 px-1
+    @apply border border-gray-200 px-1;
   }
 </style>

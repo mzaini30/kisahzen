@@ -17,13 +17,21 @@
   async function mau_mencari() {
     is_menu = false;
     if (browser) {
-      const cari = prompt("Cari apa?");
+      let cari = prompt("Cari apa?");
       if (cari) {
         await goto(`/cari?q=${encodeURIComponent(cari)}`);
       }
     }
   }
+
+  function tombol_cari(x) {
+    if (x.keyCode == 191) {
+      mau_mencari();
+    }
+  }
 </script>
+
+<svelte:window on:keydown={tombol_cari} />
 
 <svelte:head>
   <link rel="icon" href="/gambar/icon.jpg" />
@@ -93,14 +101,6 @@
                   on:click|preventDefault={mau_mencari}>Cari</a
                 >
               </p>
-              <!-- <p>
-                <a
-                  href="/semua"
-                  on:click={() => (is_menu = false)}
-                  sveltekit:prefetch
-                  class="hover:underline">Semua Tulisan</a
-                >
-              </p> -->
               {#each kategori as x}
                 <p class="uppercase mb-1"><strong>{x.kategori}</strong></p>
                 <ol>

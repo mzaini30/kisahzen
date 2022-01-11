@@ -6,11 +6,11 @@ gambar: https://i.postimg.cc/yNQ5PDgH/image.png
 
 Kegiatan blogging tidak cuma [menulis](/post/nulis). Akan tetapi, berkaitan pula dengan mengecek performa dari tulisan-tulisan yang kita tuangkan ke dalam blog kita. Nah, untuk mengatasi hal itu, ada banyak tools yang bisa kita gunakan, baik itu berbayar maupun gratis. Salah satu tools itu adalah Google Search Console.
 
-Google Search Console merupakan tools gratis yang disediakan oleh Google untuk mengecek performa blog yang kita miliki. Performa blog yang dicek itu meliputi berapa kali klik dari Google menuju blog kita, berapa banyak tayangan, kata kunci apa aja yang masuk ke blog kita, dan lain-lain.
+Google Search Console merupakan [tools gratis](/app) yang disediakan oleh Google untuk mengecek performa blog yang kita miliki. Performa blog yang dicek itu meliputi berapa kali klik dari Google menuju blog kita, berapa banyak tayangan, kata kunci apa aja yang masuk ke blog kita, dan lain-lain.
 
 ![Tampilan dashboard Google Search Console](https://i.postimg.cc/MptpbYzr/image.png)
 
-Di situ terlihat bahwa ada 3 klik yang berasal dari halaman Google menuju ke blogku. Lalu, ada 14 total tayangan yang artinya link menuju ke blogku sudah muncul sebanyak 14 kali. Lalu, dari 3 dibagi 14 itu, menghasilkan 21,4% yang artinya, dari 100% kemunculan link blogku di Google, hanya 21,4% aja yang mengkliknya.
+Di situ terlihat bahwa ada 3 klik yang berasal dari halaman Google menuju ke blogku. Lalu, ada 14 total tayangan yang artinya link menuju ke [blogku](/post/nulis) sudah muncul sebanyak 14 kali. Lalu, dari 3 dibagi 14 itu, menghasilkan 21,4% yang artinya, dari 100% kemunculan link blogku di Google, hanya 21,4% aja yang mengkliknya.
 
 Kemudian, selain mengecek performa blog, Google Search Console juga memberikan laporan indexing blog kita:
 

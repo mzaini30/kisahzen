@@ -21,7 +21,7 @@
           hasil_pencarian = [...hasil_pencarian, x];
         }
       }
-      hasil_pencarian = [...new Set(hasil_pencarian)]
+      hasil_pencarian = [...new Set(hasil_pencarian)];
     }
   }
   mulai_cari();

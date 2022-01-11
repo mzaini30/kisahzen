@@ -4,7 +4,7 @@ deskripsi: Hanya dengan browsing, duit datang sendiri
 gambar: https://temosoft.com/wp-content/uploads/2020/06/Brave-Browser-android-logo.png
 ---
 
-Hah? Hanya dengan browser bisa dapat duit? Beneran kah? Eh tapi beneran loh. Ini buktinya:
+Hah? Hanya dengan [browser](/post/npm) bisa dapat duit? Beneran kah? Eh tapi beneran loh. Ini buktinya:
 
 ![Perkiraan pendapatan bulan ini dari browser Brave](https://i.postimg.cc/t486qhdV/Screenshot-2022-01-11-05-59-13-25.png)
 
@@ -32,7 +32,7 @@ Nah, coba kita lihat kembali apa yang menyebabkan kita dapat duit. Ketika kita b
 
 Jika kita mendapatkan 0,01 BAT untuk setiap notifikasi, maka pasti Brave mendapatkan duit lebih dari itu. Misalnya aja 0,09 BAT. Maka, duit yang disediakan oleh yang punya iklan adalah 0,1 BAT.
 
-Menyenangkan banget kan ya, setiap kita mendapatkan iklan, kita dapat duit. Coba kalau menggunakan browser lain, kita dapat iklan tapi nggak dapat duit. Bahkan, iklan-iklan di website-website itu membuat halaman menjadi berat.
+Menyenangkan banget kan ya, setiap kita mendapatkan iklan, kita dapat duit. Coba kalau menggunakan browser lain, kita dapat iklan tapi nggak dapat duit. Bahkan, iklan-iklan di [website-website](/post/framework) itu membuat halaman menjadi berat.
 
 Iklan dari Brave itu **hanya** berupa notifikasi. Jadi, nggak mengganggu kita. Bayangkan deh iklan-iklan di website-website. Cukup mengganggu. Apalagi kalau bentuk iklannya itu pop up. Udah mengganggu, berat, nggak ngasih kita duit.
 
@@ -42,7 +42,7 @@ Brave akan memblokir semua iklan. Jadi, ketika kita mengunjungi suatu situs, tam
 
 Terus, dari mana content creator mendapatkan duit?
 
-Kabar baiknya, Brave menyediakan peluang untuk bekerja sama dengan para content creator buat mendapatkan duit dengan program bernama Brave Creator (linknya: <https://creators.brave.com/sign-up>). Jadi, nggak usah khawatir.
+Kabar baiknya, Brave menyediakan peluang untuk bekerja sama dengan para [content creator](/post/nulis) buat mendapatkan duit dengan program bernama Brave Creator (linknya: <https://creators.brave.com/sign-up>). Jadi, nggak usah khawatir.
 
 Dengan Brave Creator, kamu bisa mendaftarkan website, channel YouTube, channel Twitch, akun Twitter, channel Vimeo, akun Reddit, dan akun Github. Kalau aku sih sudah mendaftarkan websiteku, akun Twitter, Github, dan channel YouTube.
 
@@ -61,6 +61,7 @@ Jadi, kalau misalnya ada pengunjung blogmu yang suka banget sama konten yang kam
 Nggak cuma iklan yang diblokir. Bahkan, script pelacakan seperti Google Analytics juga diblokir. Kenapa? Karena Brave ini berfokus pada privasi.
 
 Jadi, semua potensi pembocoran privasi akan diblokir. Saking mendukungnya sama pelindungan privasi, Brave juga menyediakan protocol Tor. Sehingga website-website yang berdomain .onion bisa dibuka di Brave. 
+
 Protocol Tor terkenal untuk aktivitas-aktivitas ilegal seperti perdagangan senjata, penjualan organ manusia, dan transaksi narkoba. Lah, kok malah diadopsi sama Brave?
 
 Kan aktivitas-aktivitas ilegal di atas nggak akan bisa dilakukan jika tidak ada pengamanan privasi tinggi. Itulah yang menyebabkan Brave mengadopsinya karena berfokus pada pengamanan privasi.

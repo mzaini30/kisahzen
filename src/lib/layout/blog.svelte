@@ -18,6 +18,8 @@
 <h1 class="judul judul-postingan">{judul}</h1>
 
 <article class="artikel">
+  <p><img src={gambar} /></p>
+
   <slot />
 
   <nav class="wadah-postingan-lainnya">

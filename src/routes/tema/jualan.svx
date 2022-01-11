@@ -4,8 +4,6 @@ deskripsi: Template Blogspot yang cocok buat jualan offline
 gambar: https://i.ibb.co/CvLqNdV/Screenshot-from-2021-10-24-21-22-29.png
 ---
 
-![Tampilannya](https://i.ibb.co/CvLqNdV/Screenshot-from-2021-10-24-21-22-29.png)
-
 > Demo: <https://jualan-contoh.blogspot.com/>
 
 Template ini cocok untuk mencantumkan barang-barang yang ada di toko/warung beserta harga-harganya.

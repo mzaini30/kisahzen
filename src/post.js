@@ -1,5 +1,13 @@
 export default [
   {
+    kategori: "Bisnis",
+    judul: "Cuan dengan Browser Brave",
+    slug: "brave",
+    gambar:
+      "https://temosoft.com/wp-content/uploads/2020/06/Brave-Browser-android-logo.png",
+  },
+
+  {
     kategori: "Membaca",
     judul: "Apakah Menghafal Quran Susah?",
     slug: "menghafal-quran",
@@ -10,8 +18,7 @@ export default [
     kategori: "Menulis",
     judul: "Yuk Berkenalan dengan Google Search Console",
     slug: "google-search-console",
-    gambar:
-      "https://i.postimg.cc/yNQ5PDgH/image.png",
+    gambar: "https://i.postimg.cc/yNQ5PDgH/image.png",
   },
   {
     kategori: "Frontend",

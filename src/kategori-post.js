@@ -9,6 +9,6 @@ export default [
   },
   {
     kategori: "Produktif",
-    subkategori: ["Menulis", "Masak-masak", "Membaca"],
+    subkategori: ["Menulis", "Masak-masak", "Membaca", "Bisnis"],
   },
 ];

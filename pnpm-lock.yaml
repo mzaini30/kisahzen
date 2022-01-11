@@ -4,27 +4,23 @@ specifiers:
   '@sveltejs/adapter-auto': next
   '@sveltejs/adapter-static': ^1.0.0-next.24
   '@sveltejs/kit': next
-  dom-to-string: ^1.0.1
   kumpulan-tools: ^1.0.0
   mdsvex: ^0.9.8
   prettier: ^2.5.1
   prettier-plugin-svelte: ^2.5.1
   recursive-readdir-sync: ^1.0.6
   sitemap-manager: ^2.1.0
-  string-to-dom: ^0.1.5
   svelte: ^3.44.0
   vite-plugin-windicss: ^1.6.1
 
 dependencies:
   '@sveltejs/adapter-static': 1.0.0-next.24
-  dom-to-string: 1.0.1
   kumpulan-tools: 1.0.0
   mdsvex: 0.9.8_svelte@3.45.0
   prettier: 2.5.1
   prettier-plugin-svelte: 2.5.1_prettier@2.5.1+svelte@3.45.0
   recursive-readdir-sync: 1.0.6
   sitemap-manager: 2.1.0
-  string-to-dom: 0.1.5
   vite-plugin-windicss: 1.6.1
 
 devDependencies:
@@ -198,10 +194,6 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
-
-  /dom-to-string/1.0.1:
-    resolution: {integrity: sha1-8AfXZgIz/i3o1PIaFd12roZn8Vo=}
-    dev: false
 
   /esbuild-android-arm64/0.13.15:
     resolution: {integrity: sha512-m602nft/XXeO8YQPUDVoHfjyRVPdPgjyyXOxZ44MK/agewFFkPa8tUo6lAzSWh5Ui5PB4KR9UIFTSBKh/RrCmg==}
@@ -429,10 +421,6 @@ packages:
       has: 1.0.3
     dev: true
 
-  /is-element/0.1.0:
-    resolution: {integrity: sha1-xDR43xSrArfGbXSY+1RWYAv+8fs=}
-    dev: false
-
   /is-extglob/2.1.1:
     resolution: {integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=}
     engines: {node: '>=0.10.0'}
@@ -618,13 +606,6 @@ packages:
 
   /sourcemap-codec/1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
-
-  /string-to-dom/0.1.5:
-    resolution: {integrity: sha1-AnZFUqc3UOo65/T8xiWUWbBhkXY=}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      is-element: 0.1.0
-    dev: false
 
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}

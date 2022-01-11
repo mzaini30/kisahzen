@@ -7,11 +7,22 @@
   import Icon_profil from "$lib/icon/profil.svelte";
   import kategori_post from "/src/kategori-post.js";
   import { browser } from "$app/env";
+  import { goto } from "$app/navigation";
 
   let is_menu = false;
   let kategori = kategori_post.sort((a, b) =>
     a.kategori > b.kategori ? 1 : -1
   );
+
+  async function mau_mencari() {
+    is_menu = false;
+    if (browser) {
+      const cari = prompt("Cari apa?");
+      if (cari) {
+        await goto(`/cari?q=${encodeURIComponent(cari)}`);
+      }
+    }
+  }
 </script>
 
 <svelte:head>
@@ -78,16 +89,8 @@
               <p>
                 <a
                   href="/"
-                  class="hover:underline uppercase font-bold"
-                  on:click|preventDefault={() => {
-                    is_menu = false;
-                    if (browser) {
-                      const cari = prompt("Cari apa?");
-                      if (cari) {
-                        location.href = `/cari?q=${encodeURIComponent(cari)}`;
-                      }
-                    }
-                  }}>Cari</a
+                  class="hover:underline uppercase font-bold mb-1 inline-block"
+                  on:click|preventDefault={mau_mencari}>Cari</a
                 >
               </p>
               <!-- <p>

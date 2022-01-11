@@ -18,10 +18,12 @@
 
 <h1 class="judul judul-postingan">{judul}</h1>
 
-<article class="artikel">
+<section class="artikel">
   <p><img src={gambar} /></p>
 
-  <slot />
+  <article>
+    <slot />
+  </article>
 
   <nav class="wadah-postingan-lainnya">
     {#each postingan_acak as x}
@@ -31,7 +33,7 @@
       </a>
     {/each}
   </nav>
-</article>
+</section>
 
 <div>
   <script>
@@ -55,7 +57,7 @@
   .artikel {
     @apply px-2;
   }
-  .artikel > :global(p) {
+  .artikel :global(p) {
     margin: 16px 0;
   }
   .artikel :global(blockquote ol) {

@@ -5,7 +5,7 @@ export default [
   },
   {
     kategori: "Teknologi",
-    subkategori: ["Web Development"],
+    subkategori: ["Web Development", "Android"],
   },
   {
     kategori: "Hobi",

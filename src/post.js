@@ -1,5 +1,12 @@
 export default [
   {
+    kategori: "Android",
+    judul: "Privacy Policy",
+    slug: "privacy",
+    gambar:
+      "https://temosoft.com/wp-content/uploads/2020/06/Brave-Browser-android-logo.png",
+  },
+  {
     kategori: "Tips Bisnis",
     judul: "Cuan dengan Browser Brave",
     slug: "brave",

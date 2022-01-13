@@ -1,5 +1,11 @@
 export default [
   {
+    kategori: "Web Development",
+    judul: "Kumpulan Sintaks CSS",
+    slug: "css",
+    gambar:
+      "https://www.logolynx.com/images/logolynx/a6/a60635561d41eceb9cb2411cc7648b81.jpeg",
+  },{
     kategori: "Android",
     judul: "Privacy Policy",
     slug: "privacy",

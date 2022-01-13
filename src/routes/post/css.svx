@@ -1,0 +1,18 @@
+---
+judul: Kumpulan Sintaks CSS
+deskripsi: Tempat aku meletakkan sintaks-sintaks CSS supaya nggak lupa
+gambar: https://www.logolynx.com/images/logolynx/a6/a60635561d41eceb9cb2411cc7648b81.jpeg
+---
+
+## Line Clamp
+
+Misalnya aku ingin memotong [teks](/post/buku), maksimal 3 baris, sisa teksnya menjadi titik-titik:
+
+```css
+p {
+	display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+```

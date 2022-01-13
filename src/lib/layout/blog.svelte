@@ -19,7 +19,7 @@
 <h1 class="judul judul-postingan">{judul}</h1>
 
 <section class="artikel">
-  <p><img src={gambar} /></p>
+  <p><img src={gambar} alt="{judul}" /></p>
 
   <article>
     <slot />

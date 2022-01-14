@@ -1,5 +1,12 @@
 export default [
   {
+    nama: "Clck",
+    slug: "clck",
+    kategori: "SEO",
+    gambar:
+      "https://i.postimg.cc/K8Lgr4mG/Tungsten-Lamp-Inspiration-Small-Icon-Cartoon-Cartoon-Icons-Lamp-Icons-Small-Icons-PNG-and-Vector.jpg",
+  },
+  {
     nama: "Cutt",
     slug: "cutt",
     kategori: "SEO",

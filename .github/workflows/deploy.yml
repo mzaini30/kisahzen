@@ -27,10 +27,10 @@ jobs:
           restore-keys: ${{ runner.os }}-node-
 
       - name: Install
-        run: npm i
+        run: npx pnpm i
 
       - name: Build
-        run: npx pnpm build
+        run: npm run build
 
       - name: Buat Folder Public
         run: mkdir public

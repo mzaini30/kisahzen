@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Membuat Fitur Pencarian Tanpa Server</title><link rel="icon" href="/gambar/icon.jpg" data-svelte="svelte-xek3wd"><link rel="preconnect" href="https://fonts.googleapis.com" data-svelte="svelte-xek3wd"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin data-svelte="svelte-xek3wd"><link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" data-svelte="svelte-xek3wd"><link rel="stylesheet" href="/code.css" data-svelte="svelte-xek3wd"><script async src="https://www.googletagmanager.com/gtag/js?id=G-2LTKGSC791" data-svelte="svelte-xek3wd"></script><script data-svelte="svelte-xek3wd">window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-2LTKGSC791");
+  </script><meta name="description" content="Ternyata bisa loh membuat fitur pencarian tanpa server sama sekali">
+
+<meta property="og:title" content="Membuat Fitur Pencarian Tanpa Server">
+<meta property="og:description" content="Ternyata bisa loh membuat fitur pencarian tanpa server sama sekali">
+<meta property="og:image" content="https://jimsteinsharpe.com/wp-content/uploads/2017/11/Blog-Image-Searching-as-a-Woman.jpg">
+
+<meta property="og:locale" content="id_ID">
+<meta property="og:type" content="article">
+
+<meta property="twitter:title" content="Membuat Fitur Pencarian Tanpa Server">
+<meta property="twitter:description" content="Ternyata bisa loh membuat fitur pencarian tanpa server sama sekali">
+<meta property="twitter:image" content="https://jimsteinsharpe.com/wp-content/uploads/2017/11/Blog-Image-Searching-as-a-Woman.jpg">
+
+<meta property="twitter:card" content="summary_large_image">
+
+		
+
+		<link rel="stylesheet" href="/_app/assets/start-808c0b29.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-930eb459.css">
+		<link rel="stylesheet" href="/_app/assets/blog-af925adb.css">
+		<link rel="modulepreload" href="/_app/start-14f7e38a.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-547f1dc6.js">
+		<link rel="modulepreload" href="/_app/chunks/singletons-a42a5e91.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-2adcc1d5.js">
+		<link rel="modulepreload" href="/_app/pages/post/fitur-cari.svx-77de8206.js">
+		<link rel="modulepreload" href="/_app/chunks/blog-ea8977b6.js">
+		<link rel="modulepreload" href="/_app/chunks/meta-407558ab.js">
+		<link rel="modulepreload" href="/_app/chunks/post-eee2ecd0.js">
+
+		<script type="module">
+			import { start } from "/_app/start-14f7e38a.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-2adcc1d5.js"),
+						import("/_app/pages/post/fitur-cari.svx-77de8206.js")
+					],
+					url: new URL("http://prerender/post/fitur-cari"),
+					params: {}
+				}
+			});
+		</script>
+  </head>
+  <body>
+    <div id="svelte">
+
+
+
+
+
+
+<main class="body svelte-1nvwqqs"><section class="isinya svelte-1nvwqqs"><main class="konten svelte-1nvwqqs">
+
+<h1 class="judul judul-postingan svelte-1a66jk0">Membuat Fitur Pencarian Tanpa Server</h1>
+
+<section class="artikel svelte-1a66jk0"><p><img src="https://jimsteinsharpe.com/wp-content/uploads/2017/11/Blog-Image-Searching-as-a-Woman.jpg" alt="Membuat Fitur Pencarian Tanpa Server"></p>
+
+  <article><p>Fitur pencarian di sebuah blog atau website adalah fitur yang sangat penting. Sebab, dengan adanya fitur pencarian, akan memudahkan user dalam menjelajahi website berdasarkan minat yang ingin ia cari.</p>
+<p>Ketika kita mendengar fitur pencarian, maka yang terbayang di benak kita adalah sekumpulan kode <a href="/post/no-cors">server</a> untuk membangunnya, baik itu menggunakan PHP maupun <a href="/post/framework">JavaScript</a> yang server side. Tapi, pernah nggak terbayang bahwa kita juga bisa membuatnya tanpa melibatkan server sama sekali?</p>
+<p>Nah, kali ini aku akan memberi tau kepada kalian bagaimana cara membuat fitur pencarian tanpa menggunakan server sama sekali. Prinsip yang akan aku jabarkan di artikel ini adalah teknik yang kupakai untuk fitur pencarian di blog ini. Jadi, blog ini murni 100% HTML aja, tanpa melibatkan server.</p>
+<p>Kenapa nggak pakai server? Ya pengen aja sih. Juga, jika nggak pakai server, akan menghemat pengeluaranku dengan hanya membayar perpanjangan domain, tanpa perlu sewa biaya hosting. Oh iya, blogku ini hostingnya free pakai Github Pages. Ya mumpung gratis sih. Hehehehe.. Kalau di Github Pages, dia cuma menyediakan hosting HTML, jadi nggak bisa menjalankan PHP di situ.</p>
+<p>Untuk membuat fitur pencarian tanpa menggunakan server, kita buat dulu sebuah file bernama <code>post.js</code> yang berisi:</p>
+<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">[</span>
+	<span class="token punctuation">&#123;</span>
+		<span class="token literal-property property">judul</span><span class="token operator">:</span> <span class="token string">"Ikan yang Bagus"</span><span class="token punctuation">,</span>
+		<span class="token literal-property property">slug</span><span class="token operator">:</span> <span class="token string">"ikan"</span><span class="token punctuation">,</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+	<span class="token punctuation">&#123;</span>
+		<span class="token literal-property property">judul</span><span class="token operator">:</span> <span class="token string">"Sepeda Baru"</span><span class="token punctuation">,</span>
+		<span class="token literal-property property">slug</span><span class="token operator">:</span> <span class="token string">"sepeda"</span><span class="token punctuation">,</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+	<span class="token punctuation">&#123;</span>
+		<span class="token literal-property property">judul</span><span class="token operator">:</span> <span class="token string">"Kotak Pandora"</span><span class="token punctuation">,</span>
+		<span class="token literal-property property">slug</span><span class="token operator">:</span> <span class="token string">"pandora"</span><span class="token punctuation">,</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p>Nah, <code>post.js</code> ini berfungsi sebagai daftar isi yang menampung data judul dan slug semua postingan di blog kita. Jadi, prinsip fitur pencariannya itu ya nanti mendapatkan daftar isi itu dulu, baru mulai menjelajah.</p>
+<p>Sekarang, kita buat isi dari masing-masing postingan:</p>
+<p><code>ikan.html</code>:</p>
+<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Ikan yang Bagus<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>
+			Ini adalah ikan yang sangat bagus. Apa kamu menyukainya? Kalau aku, sangat
+			suka.
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<p><code>sepeda.html</code>:</p>
+<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Sepeda Baru<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Eh, aku punya sepeda baru loh. Kamu mau nyoba nggak?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<p><code>pandora.html</code>:</p>
+<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Kotak Pandora<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Jadi, zaman dulu itu, ada yang namanya kotak pandora...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<p>Nah, sekarang kita buat nih file <code>index.html</code> yang berisi fitur pencarian:</p>
+<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+			<span class="token selector">[v-cloak]</span> <span class="token punctuation">&#123;</span>
+				<span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+			<span class="token punctuation">&#125;</span>
+		</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span> <span class="token attr-name">v-cloak</span><span class="token punctuation">></span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Cari Apa?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">@submit.prevent</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mulai_cari<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+					<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>search<span class="token punctuation">"</span></span>
+					<span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>off<span class="token punctuation">"</span></span>
+					<span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Tulis di sini<span class="token punctuation">"</span></span>
+					<span class="token attr-name">@keydown</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pesan_nggak_ada = false<span class="token punctuation">"</span></span>
+					<span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>cari<span class="token punctuation">"</span></span>
+					<span class="token attr-name">required</span>
+				<span class="token punctuation">/></span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
+
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pesan_nggak_ada<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>&#123;&#123; cari &#125;&#125; nggak ada<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hasil<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>x in hasil<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+					<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">:href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">'</span>/<span class="token punctuation">'</span> + x.slug + <span class="token punctuation">'</span>.html<span class="token punctuation">'</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>&#123;&#123; x.judul &#125;&#125;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span>
+
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+			<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> createApp <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"https://unpkg.com/petite-vue@0.4.0/dist/petite-vue.es.js?module"</span><span class="token punctuation">;</span>
+			<span class="token keyword">import</span> post <span class="token keyword">from</span> <span class="token string">"./post.js"</span><span class="token punctuation">;</span>
+
+			<span class="token function">createApp</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+				<span class="token literal-property property">cari</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+				<span class="token literal-property property">hasil</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+				<span class="token literal-property property">banyak_ketemu</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+				<span class="token literal-property property">pesan_nggak_ada</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+
+				<span class="token keyword">async</span> <span class="token function">mulai_cari</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+					<span class="token keyword">this</span><span class="token punctuation">.</span>hasil <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+					<span class="token keyword">this</span><span class="token punctuation">.</span>banyak_ketemu <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+					<span class="token keyword">this</span><span class="token punctuation">.</span>pesan_nggak_ada <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+					<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token keyword">of</span> post<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+						<span class="token keyword">let</span> ambil_html <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>x<span class="token punctuation">.</span>slug<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">.html</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+						ambil_html <span class="token operator">=</span> <span class="token keyword">await</span> ambil_html<span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+						<span class="token keyword">if</span> <span class="token punctuation">(</span>ambil_html<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>cari<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+							<span class="token keyword">this</span><span class="token punctuation">.</span>banyak_ketemu<span class="token operator">++</span><span class="token punctuation">;</span>
+							<span class="token keyword">this</span><span class="token punctuation">.</span>hasil <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">this</span><span class="token punctuation">.</span>hasil<span class="token punctuation">,</span> x<span class="token punctuation">]</span><span class="token punctuation">;</span>
+						<span class="token punctuation">&#125;</span>
+					<span class="token punctuation">&#125;</span>
+
+					<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>banyak_ketemu <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+						<span class="token keyword">this</span><span class="token punctuation">.</span>pesan_nggak_ada <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+					<span class="token punctuation">&#125;</span>
+				<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+			<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">".app"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<p>Jadinya tu nanti seperti ini:</p>
+<p><img src="https://i.postimg.cc/ZRvrZ9qY/image.png" alt="Contoh mencari pandora"></p>
+<p>Dan ketika kita mencari teks yang nggak ada di file-file HTML itu, maka ada pesan peringatan:</p>
+<p><img src="https://i.postimg.cc/CxKnSZPy/image.png" alt="Mencari teks yang nggak ada di file-file HTML"></p>
+<p>Jadinya seperti ini:</p>
+<iframe src="https://quark-speckled-production.glitch.me/"></iframe>
+<p>Ternyata tanpa menggunakan server, kita juga bisa loh membuat website yang interaktif. Jadi cuma dibutuhkan HTML, <a href="/post/css">CSS</a>, dan JS aja. Contohnya ya seperti itu tadi, fitur pencarian tanpa server sama sekali. Gimana? Tertarik untuk belajar <a href="/?kategori=Web%20Development">web development</a> lebih lanjut?</p></article>
+
+  <nav class="wadah-postingan-lainnya svelte-1a66jk0"><a href="/post/framework" sveltekit:prefetch class="tulisan-lainnya svelte-1a66jk0"><img src="https://i.postimg.cc/2SN8RH0m/Beyond-React-16-Time-Slicing-and-Suspense-API.png" alt="" class="svelte-1a66jk0">
+        <div class="svelte-1a66jk0"><p class="svelte-1a66jk0">Jangan Pakai Framework JavaScript!</p></div>
+      </a><a href="/post/brave" sveltekit:prefetch class="tulisan-lainnya svelte-1a66jk0"><img src="https://temosoft.com/wp-content/uploads/2020/06/Brave-Browser-android-logo.png" alt="" class="svelte-1a66jk0">
+        <div class="svelte-1a66jk0"><p class="svelte-1a66jk0">Cuan dengan Browser Brave</p></div>
+      </a><a href="/post/telor" sveltekit:prefetch class="tulisan-lainnya svelte-1a66jk0"><img src="https://i.postimg.cc/zvQJ52Vv/Whats-App-Image-2021-12-28-at-13-17-59-1.jpg" alt="" class="svelte-1a66jk0">
+        <div class="svelte-1a66jk0"><p class="svelte-1a66jk0">Tips Menggoreng Telor yang Smooth dan Soft</p></div>
+      </a><a href="/post/privacy" sveltekit:prefetch class="tulisan-lainnya svelte-1a66jk0"><img src="https://temosoft.com/wp-content/uploads/2020/06/Brave-Browser-android-logo.png" alt="" class="svelte-1a66jk0">
+        <div class="svelte-1a66jk0"><p class="svelte-1a66jk0">Privacy Policy</p></div>
+      </a><a href="/post/ibadah" sveltekit:prefetch class="tulisan-lainnya svelte-1a66jk0"><img src="https://i.postimg.cc/RFJrCSyK/683e446beaad54541d2a1dc00b99eca7.jpg" alt="" class="svelte-1a66jk0">
+        <div class="svelte-1a66jk0"><p class="svelte-1a66jk0">Ini Makna Ibadah Bagiku</p></div>
+      </a><a href="/post/emmet" sveltekit:prefetch class="tulisan-lainnya svelte-1a66jk0"><img src="https://i.postimg.cc/T1KKZDbg/Einstein-still-relevant-past-speed-of-light-News-in-Science-ABC-Science.jpg" alt="" class="svelte-1a66jk0">
+        <div class="svelte-1a66jk0"><p class="svelte-1a66jk0">Preferences Emmet di Sublime Text untuk Coding Lebih Cepat</p></div>
+      </a><a href="/post/nulis" sveltekit:prefetch class="tulisan-lainnya svelte-1a66jk0"><img src="https://i.postimg.cc/CMtjNhy9/aaron-burden-y02j-EX-B0-O0-unsplash.jpg" alt="" class="svelte-1a66jk0">
+        <div class="svelte-1a66jk0"><p class="svelte-1a66jk0">Masih Ragu Buat Menulis? Inilah Beberapa Alasan yang Akan Menggerakkanmu Menulis Sekarang Juga</p></div>
+      </a><a href="/post/menghafal-quran" sveltekit:prefetch class="tulisan-lainnya svelte-1a66jk0"><img src="https://www.quran-edu.com/wp-content/uploads/2021/01/Online-Quran-Academy-Quran-Memorization-med.jpg" alt="" class="svelte-1a66jk0">
+        <div class="svelte-1a66jk0"><p class="svelte-1a66jk0">Apakah Menghafal Quran Susah?</p></div>
+      </a><a href="/post/buku" sveltekit:prefetch class="tulisan-lainnya svelte-1a66jk0"><img src="https://i.postimg.cc/q488vwCZ/10-Quotes-for-the-Ultimate-Book-Lover.jpg" alt="" class="svelte-1a66jk0">
+        <div class="svelte-1a66jk0"><p class="svelte-1a66jk0">Yakin Pengetahuan Diraih dengan Membaca Buku?</p></div>
+      </a><a href="/post/css" sveltekit:prefetch class="tulisan-lainnya svelte-1a66jk0"><img src="https://www.logolynx.com/images/logolynx/a6/a60635561d41eceb9cb2411cc7648b81.jpeg" alt="" class="svelte-1a66jk0">
+        <div class="svelte-1a66jk0"><p class="svelte-1a66jk0">Kumpulan Sintaks CSS</p></div>
+      </a></nav></section>
+
+<div><script>document
+      .querySelectorAll(".shiki code .line span:first-child")
+      .forEach((x) => {
+        if (
+          (x.innerText == "+" || x.innerText == "-" || x.innerText == "!") &&
+          x.getAttribute("style") == "color: #ECEFF4"
+        ) {
+          x.style.display = "none";
+        }
+      });
+  </script>
+</div></main>
+
+    <nav class="menu svelte-1nvwqqs"><a href="/" class="svelte-1nvwqqs"><svg width="1em" height="1em" viewBox="0 0 20 20"><path d="M1 1h18v2H1V1zm0 8h18v2H1V9zm0 8h18v2H1v-2zM1 5h18v2H1V5zm0 8h18v2H1v-2z" fill="currentColor"></path></svg>
+        <span class="svelte-1nvwqqs">menu</span></a>
+      <a href="/tema" sveltekit:prefetch class="svelte-1nvwqqs"><svg width="1em" height="1em" viewBox="0 0 20 20"><path d="M20 14v4a2 2 0 0 1-2 2h-4v-2a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2H6a2 2 0 0 1-2-2v-4H2a2 2 0 0 1-2-2a2 2 0 0 1 2-2h2V6c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v4h-2a2 2 0 0 0-2 2a2 2 0 0 0 2 2h2z" fill="currentColor"></path></svg>
+        <span class="svelte-1nvwqqs">tema</span></a>
+      <a href="/" sveltekit:prefetch class="svelte-1nvwqqs"><svg width="1em" height="1em" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z" fill="currentColor"></path></svg>
+        <span class="svelte-1nvwqqs">home</span></a>
+      <a href="/app" sveltekit:prefetch class="svelte-1nvwqqs"><svg width="1em" height="1em" viewBox="0 0 20 20"><path d="M0 0h9v9H0V0zm2 2v5h5V2H2zm-2 9h9v9H0v-9zm2 2v5h5v-5H2zm9-13h9v9h-9V0zm2 2v5h5V2h-5zm-2 9h9v9h-9v-9zm2 2v5h5v-5h-5z" fill="currentColor"></path></svg>
+        <span class="svelte-1nvwqqs">app</span></a>
+      <a href="/profil" sveltekit:prefetch class="svelte-1nvwqqs"><svg width="1em" height="1em" viewBox="0 0 20 20"><path d="M5 5a5 5 0 0 1 10 0v2A5 5 0 0 1 5 7V5zM0 16.68A19.9 19.9 0 0 1 10 14c3.64 0 7.06.97 10 2.68V20H0v-3.32z" fill="currentColor"></path></svg>
+        <span class="svelte-1nvwqqs">me</span></a>
+
+      </nav></section></main>
+
+<table class="shortcut svelte-1nvwqqs"><thead class="svelte-1nvwqqs"><tr class="svelte-1nvwqqs"><th class="svelte-1nvwqqs">Key</th>
+      <th class="svelte-1nvwqqs">Command</th></tr></thead>
+  <tbody class="svelte-1nvwqqs"><tr class="svelte-1nvwqqs"><td class="svelte-1nvwqqs">o</td>
+      <td class="svelte-1nvwqqs">Open Sidebar Menu</td></tr>
+    <tr class="svelte-1nvwqqs"><td class="svelte-1nvwqqs">Esc</td>
+      <td class="svelte-1nvwqqs">Close Sidebar Menu</td></tr>
+    <tr class="svelte-1nvwqqs"><td class="svelte-1nvwqqs">/</td>
+      <td class="svelte-1nvwqqs">Search</td></tr></tbody>
+</table>
+
+</div>
+  </body>
+</html>

@@ -12,14 +12,14 @@
 </script>
 
 <svelte:head>
-  <Meta {judul} {deskripsi} {gambar} />
+  <meta {judul} {deskripsi} {gambar} />
   <title>{judul}</title>
 </svelte:head>
 
 <h1 class="judul judul-postingan">{judul}</h1>
 
 <section class="artikel">
-  <p><img src={gambar} alt="{judul}" /></p>
+  <p><img src={gambar} alt={judul} /></p>
 
   <article>
     <slot />
@@ -70,7 +70,7 @@
     @apply bg-gray-200 text-sm m-0 mb-3;
   }
   .artikel :global(iframe) {
-    @apply mx-auto border border-red-500 mb-3 block
+    @apply mx-auto border border-red-500 mb-3 block;
   }
   :global(blockquote p) {
     @apply p-3 m-0;

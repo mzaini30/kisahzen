@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-  <meta {judul} {deskripsi} {gambar} />
+  <Meta {judul} {deskripsi} {gambar} />
   <title>{judul}</title>
 </svelte:head>
 

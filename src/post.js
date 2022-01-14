@@ -1,11 +1,19 @@
 export default [
   {
     kategori: "Web Development",
+    judul: "Membuat Fitur Pencarian Tanpa Server",
+    slug: "fitur-cari",
+    gambar:
+      "https://jimsteinsharpe.com/wp-content/uploads/2017/11/Blog-Image-Searching-as-a-Woman.jpg",
+  },
+  {
+    kategori: "Web Development",
     judul: "Kumpulan Sintaks CSS",
     slug: "css",
     gambar:
       "https://www.logolynx.com/images/logolynx/a6/a60635561d41eceb9cb2411cc7648b81.jpeg",
-  },{
+  },
+  {
     kategori: "Android",
     judul: "Privacy Policy",
     slug: "privacy",

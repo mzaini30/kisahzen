@@ -69,6 +69,9 @@
   .artikel :global(blockquote) {
     @apply bg-gray-200 text-sm m-0 mb-3;
   }
+  .artikel :global(iframe) {
+    @apply mx-auto border border-red-500 mb-3 block
+  }
   :global(blockquote p) {
     @apply p-3 m-0;
   }

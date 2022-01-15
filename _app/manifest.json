@@ -127,7 +127,7 @@
       "_meta-407558ab.js"
     ],
     "css": [
-      "assets/pages/tools/tiny-url.svelte-4aa92c8b.css"
+      "assets/pages/tools/cutt.svelte-0fbb27e8.css"
     ]
   },
   "src/routes/tools/clck.svelte": {
@@ -140,7 +140,7 @@
       "_meta-407558ab.js"
     ],
     "css": [
-      "assets/pages/tools/tiny-url.svelte-4aa92c8b.css"
+      "assets/pages/tools/cutt.svelte-0fbb27e8.css"
     ]
   },
   "src/routes/tools/cutt.svelte": {
@@ -153,7 +153,7 @@
       "_meta-407558ab.js"
     ],
     "css": [
-      "assets/pages/tools/tiny-url.svelte-4aa92c8b.css"
+      "assets/pages/tools/cutt.svelte-0fbb27e8.css"
     ]
   },
   "src/routes/cari.svelte": {

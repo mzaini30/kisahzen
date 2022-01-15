@@ -6,7 +6,7 @@
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
-    "prettier": "prettier --write --plugin-search-dir=. ./**/*.html ./src/**/*.svelte ./src/**/**/*.svelte ./src/**/*.js ./*.js"
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",

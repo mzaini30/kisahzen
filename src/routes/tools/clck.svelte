@@ -65,7 +65,9 @@
 <h1 class="judul">Clck</h1>
 
 <main class="app">
-  <p class="font-bold italic">Clck ini nggak mau generate link yang udah short</p>
+  <p class="font-bold italic">
+    Clck ini nggak mau generate link yang udah short
+  </p>
   <p>Masukkan URL</p>
   <textarea
     name=""

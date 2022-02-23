@@ -1,6 +1,13 @@
 export default [
   {
     kategori: "Web Development",
+    judul: "Katla: Permainan Tebak Kata yang Kadang Bikin Jengkel",
+    slug: "katla",
+    gambar:
+      "https://selular.id/wp-content/uploads/2022/02/cara-main-Katla-1.jpg",
+  },
+  {
+    kategori: "Web Development",
     judul: "Membuat Fitur Pencarian Tanpa Server",
     slug: "fitur-cari",
     gambar:

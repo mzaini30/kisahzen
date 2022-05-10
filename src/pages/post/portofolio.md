@@ -62,3 +62,44 @@ Saya adalah Zen yang merupakan lulusan S1 Psikologi Universitas Mulawarman. Untu
 40. [Mean Hipotetik](https://play.google.com/store/apps/details?id=com.mzaini30.meanhipotetik)
 41. [Tukar Dinar Dirham](https://play.google.com/store/apps/details?id=com.mzaini30.tukardinardirham)
 42. [Ngaji](https://play.google.com/store/apps/details?id=com.mzaini30.ngaji)
+
+## Aplikasi CLI
+
+1. [Gajah](https://github.com/mzaini30/gajah)
+
+## Package JavaScript
+
+1. [Svelte Editor](https://www.npmjs.com/package/svelte-editor)
+2. [Ambil Gambar](https://www.npmjs.com/package/ambil-gambar)
+3. [Kumpulan Tools](https://www.npmjs.com/package/kumpulan-tools)
+4. [BTOA Pro](https://www.npmjs.com/package/btoa-pro)
+5. [Embed YouTube](https://www.npmjs.com/package/embed-youtube)
+6. [Create Svelte Zen](https://www.npmjs.com/package/create-svelte-zen)
+7. [Svelte imgbb](https://www.npmjs.com/package/svelte-imgbb)
+8. [Mantra Zen](https://www.npmjs.com/package/mantra-zen)
+9. [Create Aqua](https://www.npmjs.com/package/create-aqua)
+10. [Not Adapter Vercel](https://www.npmjs.com/package/not-adapter-vercel)
+11. [Svelte Carousel Flickity](https://www.npmjs.com/package/svelte-carousel-flickity)
+12. [Not Svelte Carousel](https://www.npmjs.com/package/not-svelte-carousel)
+13. [Sergey Zen](https://www.npmjs.com/package/sergey-zen)
+14. [Solid Helper](https://www.npmjs.com/package/solid-helper)
+15. [Vue Route Generator JSX](https://www.npmjs.com/package/vue-route-generator-jsx)
+16. [Olah WA](https://www.npmjs.com/package/olah-wa)
+17. [Svelte Meta Text](https://www.npmjs.com/package/svelte-meta-text)
+18. [Vite Plugin Pages React](https://www.npmjs.com/package/vite-plugin-pages-react)
+19. [Astro Meta](https://www.npmjs.com/package/astro-meta)
+20. [Svelte Meta Simple](https://www.npmjs.com/package/svelte-meta-simple)
+21. [Astro Div](https://www.npmjs.com/package/astro-div)
+22. [Zen Headers](https://www.npmjs.com/package/zen-headers)
+23. [Astro Meta Blogspot](https://www.npmjs.com/package/astro-meta-blogspot)
+24. [Mini SSG Zen](https://www.npmjs.com/package/mini-ssg-zen)
+25. [Sawah](https://www.npmjs.com/package/sawah)
+26. [Selenia](https://www.npmjs.com/package/selenia)
+
+	Selenium versi simpel.
+
+27. [Mantap](https://www.npmjs.com/package/mantap)
+28. [Unmei](https://www.npmjs.com/package/unmei)
+29. [Mantap HP](https://www.npmjs.com/package/mantap-hp)
+30. [Bumi](https://www.npmjs.com/package/bumi)
+31. [Excalibur Zen](https://www.npmjs.com/package/excalibur-zen)

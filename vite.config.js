@@ -6,7 +6,7 @@ import generateSitemap from 'vite-plugin-pages-sitemap'
 import Layouts from 'vite-plugin-vue-layouts';
 import Prism from 'markdown-it-prism'
 
-const hostname = 'https://kisahzen.com/'
+const hostname = 'https://www.kisahzen.com/'
 
 // https://vitejs.dev/config/
 export default defineConfig({

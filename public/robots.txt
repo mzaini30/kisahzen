@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kisahzen.com/sitemap.xml
+Sitemap: https://www.kisahzen.com/sitemap.xml

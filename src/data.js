@@ -3,6 +3,10 @@ export default [
 		bulan: 'Mei 2022',
 		postingan: [
 			{
+				judul: "Portofolio",
+				link: "portofolio"
+			},
+			{
 				judul: "Mencoba Berhemat Kuota Internet",
 				link: "hemat-internet"
 			},

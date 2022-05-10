@@ -5,6 +5,9 @@
 <template>
 	<div class="container">
 		<h1 class='judul'>Kisah Zen</h1>
+		<p>
+			<router-link to="/post/portofolio">Portofolio</router-link>
+		</p>
 		<img class='wakatime' src="https://github-readme-stats.vercel.app/api/wakatime?username=mzaini30" alt="" />
 		<div class="" v-for='x in data'>
 			<h2>{{ x.bulan }}</h2>

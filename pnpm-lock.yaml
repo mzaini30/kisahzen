@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@vitejs/plugin-vue': ^2.3.1
   '@vueuse/head': ^0.7.6
+  excalibur-zen: ^0.0.1
   markdown-it-prism: ^2.2.4
   prism-theme-vars: ^0.2.2
   vite: ^2.9.7
@@ -16,6 +17,7 @@ specifiers:
 
 dependencies:
   '@vueuse/head': 0.7.6_vue@3.2.33
+  excalibur-zen: 0.0.1
   markdown-it-prism: 2.2.4
   prism-theme-vars: 0.2.2
   vite-plugin-md: 0.13.1_vite@2.9.8
@@ -562,6 +564,10 @@ packages:
 
   /estree-walker/2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
+    dev: false
+
+  /excalibur-zen/0.0.1:
+    resolution: {integrity: sha512-bGgqL2JKpS6eT+6NWp5yIGRLIkpP3RFC//XIM2FGQSBY6vL8jA+hyimDLXk0Ja3ASOjRM6UcnYVaVUBZKvHPsA==}
     dev: false
 
   /extend-shallow/2.0.1:

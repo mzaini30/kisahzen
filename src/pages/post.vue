@@ -1,9 +1,15 @@
 <script setup="">
 	import 'prism-theme-vars/base.css'
+	import IconRumah from '/src/assets/iconRumah.vue'
 </script>
 
 <template>
 	<div class="container isi-postingan">
+		<p class="tengah">
+			<router-link to="/">
+				<IconRumah></IconRumah>
+			</router-link>
+		</p>
 		<router-view></router-view>
 		<p class="tengah">
 			<router-link to='/'>Baca artikel lainnya</router-link>

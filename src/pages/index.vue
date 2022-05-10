@@ -1,12 +1,26 @@
 <script setup="">
 	import data from '/src/data'
+
+	const menu = [
+		{
+			judul: 'Portofolio',
+			link: '/post/portofolio'
+		},
+		{
+			judul: 'Tools',
+			link: '/tools'
+		},
+	]
 </script>
 
 <template>
 	<div class="container">
 		<h1 class='judul'>Kisah Zen</h1>
 		<p>
-			<router-link to="/post/portofolio">Portofolio</router-link>
+			<span v-for='(x, n) in menu'>
+				<span :class='n == 0 ? "sembunyi" : null'> &bull; </span>
+				<router-link :to="x.link">{{ x.judul }}</router-link>
+			</span>
 		</p>
 		<img class='wakatime' src="https://github-readme-stats.vercel.app/api/wakatime?username=mzaini30" alt="" />
 		<div class="" v-for='x in data'>
@@ -43,5 +57,8 @@ img.wakatime {
 	img.wakatime {
 		margin-left: 0;
 	}
+}
+.sembunyi {
+	display: none;
 }
 </style>

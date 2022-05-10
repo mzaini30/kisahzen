@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: kisahzen.com
-Token: 572fde6b639d2f2f84b0a622944e911fb8215e09296504a4cf08bf785d693c1b

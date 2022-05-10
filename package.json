@@ -1,27 +1,26 @@
 {
-  "name": "kisahzen-svelte",
-  "version": "0.0.1",
+  "name": "coba-vite-vue",
+  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/head": "^0.7.6",
+    "markdown-it-prism": "^2.2.4",
+    "prism-theme-vars": "^0.2.2",
+    "vite-plugin-md": "^0.13.1",
+    "vite-plugin-pages": "^0.23.0",
+    "vite-plugin-pages-sitemap": "^1.2.2",
+    "vite-plugin-vue-layouts": "^0.6.0",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.15",
+    "vue-router-prefetch": "2"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "next",
-    "svelte": "^3.44.0"
-  },
-  "type": "module",
-  "dependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.24",
-    "kumpulan-tools": "^1.0.0",
-    "mdsvex": "^0.9.8",
-    "prettier": "^2.5.1",
-    "prettier-plugin-svelte": "^2.5.1",
-    "recursive-readdir-sync": "^1.0.6",
-    "sitemap-manager": "^2.1.0",
-    "vite-plugin-windicss": "^1.6.1"
+    "@vitejs/plugin-vue": "^2.3.1",
+    "vite": "^2.9.7"
   }
 }

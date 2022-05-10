@@ -79,3 +79,9 @@
 		</div>
 	</form>
 </template>
+
+<style scoped="">
+textarea.form-control {
+    font-size: 0.9rem;
+}
+</style>

@@ -3,6 +3,10 @@ export default [
 		bulan: 'Mei 2022',
 		postingan: [
 			{
+				judul: "Mencoba Berhemat Kuota Internet",
+				link: "hemat-internet"
+			},
+			{
 				judul: 'Kenapa Aku Lebih Suka Pakai Bootstrap daripada Tailwind?',
 				link: 'tailwind-itu-jelek'
 			},

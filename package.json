@@ -15,6 +15,7 @@
     "vite-plugin-md": "^0.13.1",
     "vite-plugin-pages": "^0.23.0",
     "vite-plugin-pages-sitemap": "^1.2.2",
+    "vite-plugin-vue-inspector": "^0.5.7",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vue": "^3.2.25",
     "vue-router": "^4.0.15",

@@ -5,6 +5,7 @@ import Markdown, {meta} from 'vite-plugin-md'
 import generateSitemap from 'vite-plugin-pages-sitemap'
 import Layouts from 'vite-plugin-vue-layouts';
 import Prism from 'markdown-it-prism'
+import Inspector from "vite-plugin-vue-inspector"
 
 const hostname = 'https://www.kisahzen.com/'
 
@@ -26,6 +27,7 @@ export default defineConfig({
         md.use(Prism)
       }
     }),
-    Layouts()
+    Layouts(),
+    Inspector()
   ]
 })

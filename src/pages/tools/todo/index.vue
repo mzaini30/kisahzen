@@ -3,6 +3,7 @@
 	import {sql, api} from './api'
 	import excalibur from 'excalibur-zen'
 	import {ref} from 'vue'
+	import {Head} from '@vueuse/head'
 
 	const {push} = useRouter()
 
@@ -59,6 +60,10 @@
 </script>
 
 <template>
+	<Head>
+		<title>TODO</title>
+	</Head>
+	
 	<form action="" @submit.prevent='simpan'>
 		<div class="row">
 			<div class="col">

@@ -1,6 +1,12 @@
 <script setup="">
 	import 'prism-theme-vars/base.css'
 	import IconRumah from '/src/assets/iconRumah.vue'
+	import {onMounted} from 'vue'
+
+	onMounted(() => {
+		const judul = document.querySelector('h1').innerText
+		document.title = judul
+	})
 </script>
 
 <template>

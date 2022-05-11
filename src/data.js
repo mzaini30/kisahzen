@@ -3,6 +3,10 @@ export default [
 		bulan: 'Mei 2022',
 		postingan: [
 			{
+				judul: "Semangat Menembus Batas!",
+				link: "menembus-batas"
+			},
+			{
 				judul: "Portofolio",
 				link: "portofolio"
 			},

@@ -3,6 +3,7 @@
 	import {sql, api} from './api'
 	import {ref} from 'vue'
 	import {useRouter} from 'vue-router'
+	import {Head} from '@vueuse/head'
 
 	const {push} = useRouter()
 
@@ -28,6 +29,9 @@
 </script>
 
 <template>
+	<Head>
+		<title>Login TODO</title>
+	</Head>
 	<div class="container mt-3">
 		<form action="" @submit.prevent='cek'>
 			<div class="mb-3">

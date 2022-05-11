@@ -1,6 +1,7 @@
 <script setup="">
 	import {ref} from 'vue'
 	import dataSurat from './dataSurat'
+	import {Head} from '@vueuse/head'
 
 	const nomorHalaman = ref('')
 	const juz = ref('')
@@ -44,6 +45,10 @@
 </script>
 
 <template>
+	<Head>
+		<title>Nomor Halaman Ayat</title>
+	</Head>
+	
 	<form action="" @submit.prevent='olah'>
 		<div class="row">
 			<div class="col">

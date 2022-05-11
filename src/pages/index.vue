@@ -1,5 +1,6 @@
 <script setup="">
 	import data from '/src/data'
+	import {Head} from '@vueuse/head'
 
 	const menu = [
 		{
@@ -14,6 +15,9 @@
 </script>
 
 <template>
+	<Head>
+		<title>Kisah Zen</title>
+	</Head>
 	<div class="container">
 		<h1 class='judul'>Kisah Zen</h1>
 		<p>

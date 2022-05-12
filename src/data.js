@@ -3,6 +3,10 @@ export default [
 		bulan: 'Mei 2022',
 		postingan: [
 			{
+				judul: "Jangan Lupa clearTimeout",
+				link: "cleartimeout"
+			},
+			{
 				judul: "Super Simpel Global State di Vue",
 				link: "global-state-vue"
 			},

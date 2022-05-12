@@ -3,6 +3,10 @@ export default [
 		bulan: 'Mei 2022',
 		postingan: [
 			{
+				judul: "Super Simpel Global State di Vue",
+				link: "global-state-vue"
+			},
+			{
 				judul: "Semangat Menembus Batas!",
 				link: "menembus-batas"
 			},

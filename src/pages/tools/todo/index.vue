@@ -9,6 +9,7 @@
 
 	const bagianDo = ref('')
 	const bagianPlan = ref('')
+	const isAdmin = ref(false)
 
 	async function ambilData(){
 		let data = await excalibur(sql, {
@@ -38,6 +39,7 @@
 			if (data[0].banyak < 1){
 				push(halamanLogin)
 			} else {
+				isAdmin.value = true
 				ambilData()
 			}
 		}
@@ -64,7 +66,7 @@
 		<title>TODO</title>
 	</Head>
 	
-	<form action="" @submit.prevent='simpan'>
+	<form v-if='isAdmin' action="" @submit.prevent='simpan'>
 		<div class="row">
 			<div class="col">
 				<div class="mb-3">

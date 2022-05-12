@@ -1,12 +1,21 @@
 <script setup="">
 	import 'prism-theme-vars/base.css'
 	import IconRumah from '/src/assets/iconRumah.vue'
-	import {onMounted} from 'vue'
+	import {onMounted, ref, onUpdated} from 'vue'
+	import {useRoute} from 'vue-router'
 
-	onMounted(() => {
-		const judul = document.querySelector('h1').innerText
-		document.title = judul
-	})
+	const website = 'https://www.kisahzen.com'
+
+	const judul = ref('')
+	const acak = ref(Math.random())
+
+	function ubah(){
+		judul.value = document.querySelector('h1').innerText
+		document.title = judul.value
+	}
+
+	onUpdated(() => ubah())
+	onMounted(() => ubah())
 </script>
 
 <template>
@@ -18,6 +27,10 @@
 		</p>
 		<router-view></router-view>
 		<p class="tengah">
+			<a :href="'https://twitter.com/intent/tweet?text=' + encodeURIComponent(judul) + '&url=' + website + useRoute().path + '&via=zenia2020'">Share ke Twitter</a>
+			&bull;
+			<a :href="'https://twitter.com/search?q=' + website + useRoute().path">Diskusi di Twitter</a>
+			&bull;
 			<router-link to='/'>Baca artikel lainnya</router-link>
 		</p>
 	</div>

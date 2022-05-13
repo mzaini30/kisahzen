@@ -3,6 +3,10 @@ export default [
 		bulan: 'Mei 2022',
 		postingan: [
 			{
+				judul: "Mengaktifkan Template String Vue di Sublime",
+				link: "template-string-vue"
+			},
+			{
 				judul: "Jangan Lupa clearTimeout",
 				link: "cleartimeout"
 			},

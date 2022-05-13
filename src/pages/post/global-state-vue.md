@@ -1,5 +1,7 @@
 # Super Simpel Global State di Vue
 
+Jadi, kita bisa membuat global state (store) dengan menggunakan `ref` maupun `reactive`. Di sini, aku bahas keduanya untuk jadi pertimbanganmu dalam memilih.
+
 ## Menggunakan `ref`
 
 Isi dari `state.js`:

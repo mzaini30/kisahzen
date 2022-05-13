@@ -3,6 +3,10 @@ export default [
 		bulan: 'Mei 2022',
 		postingan: [
 			{
+				judul: "Mencoba Menggunakan Vue Tanpa Build",
+				link: "vue-tanpa-build"
+			},
+			{
 				judul: "Mengaktifkan Template String Vue di Sublime",
 				link: "template-string-vue"
 			},

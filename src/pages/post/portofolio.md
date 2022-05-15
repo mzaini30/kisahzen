@@ -2,6 +2,12 @@
 
 Saya adalah Zen yang merupakan lulusan S1 Psikologi Universitas Mulawarman. Untuk bekerja sama denganku, bisa menghubungi kontak WA [081545143654](https://wa.me/6281545143654).
 
+## Pengalaman Kerja
+
+1. [Automa](https://github.com/AutomaApp/)
+
+	Sebagai kolaborator.
+
 ## Website
 
 1. [Assessment Pemasyarakatan](https://assessment-pemasyarakatan.com/)

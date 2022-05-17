@@ -3,6 +3,10 @@ export default [
 		bulan: 'Mei 2022',
 		postingan: [
 			{
+				judul: "Nonton Upin Ipin Sambil Ngoding, Pakai Fitur Picture in Picture",
+				link: "picture-in-picture-automa"
+			},
+			{
 				judul: "Mencoba Menggunakan Vue Tanpa Build",
 				link: "vue-tanpa-build"
 			},

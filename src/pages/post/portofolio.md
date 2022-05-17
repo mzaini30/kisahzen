@@ -72,6 +72,7 @@ Saya adalah Zen yang merupakan lulusan S1 Psikologi Universitas Mulawarman. Untu
 40. [Mean Hipotetik](https://play.google.com/store/apps/details?id=com.mzaini30.meanhipotetik)
 41. [Tukar Dinar Dirham](https://play.google.com/store/apps/details?id=com.mzaini30.tukardinardirham)
 42. [Ngaji](https://play.google.com/store/apps/details?id=com.mzaini30.ngaji)
+43. [Target Penghasilan](https://play.google.com/store/apps/details?id=com.mzaini30.targetpenghasilan)
 
 ## Aplikasi CLI
 

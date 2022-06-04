@@ -1,51 +1,38 @@
-# Template Vue
+# new-kisahzen
 
-## Meletakkan File-File Vue dan Markdown
+[îles]: https://github.com/ElMassimo/iles
+[configuration reference]: https://iles-docs.netlify.app/config
 
-Di folder `src/pages/`.
+This template should help get you started developing with [îles].
 
-## Meletakkan File-File Static
+## Recommended IDE Setup
 
-Di folder `public/`.
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur).
 
-## Mengubah Base URL (untuk keperluan sitemap)
+## Type Support for `.vue` Imports in TS
 
-Pada file `vite.config.js`, pada bagian:
+Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic `PageComponent` type by default. In most cases this is fine if you don't really care about component prop types outside of templates.
 
-```javascript
-const hostname = 'http://localhost:3000/'
+However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can run `Volar: Switch TS Plugin on/off` from VSCode command palette.
+
+## Customize configuration
+
+See îles [Configuration Reference].
+
+## Project Setup
+
+```sh
+npm install
 ```
 
-## Contoh File Markdown dengan Head
+### Compile and Hot-Reload for Development
 
-```markdown
----
-title: About
----
-
-# Ini adalah Halaman About
-
-Lumayan
+```sh
+npm run dev
 ```
 
-## Ngelink ke Halaman Lain
+### Type-Check, Compile and Minify for Production
 
-```html
-<router-link to="/about">Halaman About</router-link>
-```
-
-## Contoh Menggunakan Head pada Halaman Vue
-
-```html
-<script setup="">
-	import {Head} from '@vueuse/head'
-</script>
-
-<template>
-	<Head>
-		<title>Hai...</title>
-	</Head>
-
-	<p>Ini adalah bagian beranda</p>
-</template>
+```sh
+npm run build
 ```

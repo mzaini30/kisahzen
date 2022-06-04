@@ -1,0 +1,40 @@
+div[class*='language-'] {
+  position: relative;
+  /* background, font-size, line-height */
+}
+
+div[class*='language-'] pre {
+  /* padding */
+}
+
+pre[class*='language-'] {
+  position: relative; /* position it to allow text selection */
+  overflow: auto;
+}
+
+pre.line-highlight,
+pre.line-numbers {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  user-select: none;
+  overflow: hidden;
+}
+
+.line-highlight > .highlighted {
+  background: rgba(0,0,0,0.1);
+}
+
+div[class*='language-'].line-numbers-mode {
+  --gutter-width: 3.5rem;
+  padding-left: calc(var(--gutter-width) + 1rem);
+}
+
+pre.line-numbers {
+  border-right: 1px solid rgba(0,0,0,0.1);
+  text-align: center;
+  width: var(--gutter-width);
+}

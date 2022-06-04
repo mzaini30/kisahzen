@@ -19,6 +19,12 @@
 </template>
 
 <style>
+	.konten strong {
+		@apply font-bold
+	}
+	.konten em {
+		@apply italic
+	}
   .konten h1 {
     @apply text-3xl font-bold text-center
   }

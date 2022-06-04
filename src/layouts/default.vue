@@ -8,6 +8,9 @@
 </script>
 
 <template>
+	<Head>
+		<link rel="icon" href="/icon.jpg"/>
+	</Head>
   <div class="konten p-4">
     <router-link to="/" class='uppercase font-bold text-sm'>
       <div class="i-charm-arrow-left inline-block -mb-2px"></div>

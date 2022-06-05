@@ -41,6 +41,13 @@
     <h1>{{ frontmatter.title }}</h1>
     <p class="text-sm text-center">{{ frontmatter.date.getDate() }} {{ bulan[frontmatter.date.getMonth()] }} {{ frontmatter.date.getFullYear() }}</p>
     <slot/>
+    <p 
+      class='underline decoration-dotted cursor-pointer' 
+      :data-v-inspector-file="`/home/zen/personal-project/kisahzen/src/pages${useRoute().path}.mdx`" 
+      data-v-inspector-line="1" 
+      data-v-inspector-column="1" 
+      :data-v-inspector-title="`${useRoute().path.replace('/post/', '')}.mdx`" 
+    >edit</p>
     <h2>Tulisan Lainnya</h2>
     <ol class="list-decimal ml-5">
       <li v-for='x in acak(postingan).filter(x => x.href != useRoute().path).filter((x, n) => n < 5)' class='mb-2'>

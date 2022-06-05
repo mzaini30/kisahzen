@@ -58,6 +58,12 @@
 </template>
 
 <style>
+  * {
+    tab-size: 2;
+  }
+  .konten blockquote {
+    @apply p-5 bg-blue-100 border-l border-l-blue-500 border-l-4
+  }
   .konten :not(pre) > code {
     @apply font-bold
   }

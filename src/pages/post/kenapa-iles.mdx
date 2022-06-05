@@ -1,0 +1,33 @@
+---
+title: Kenapa Aku Memilih Iles untuk Membangun Blog Ini?
+description: Ada banyak SSG untuk membuat blog seperti Jekyll, Gatsby, dan Hugo. Mengapa aku memilih Iles?
+date: 2022-06-05
+---
+
+Ada banyak tools untuk membuat sebuah blog. Biasanya tools ini disebut sebagai SSG (static site generator). Di sini aku menyebutnya sebagai sebuah blog karena blog itu khusus buat nulis yang memerlukan aspek SEO. Makanya aku nggak menyebutnya sebagai website. Karena, website itu masih luas. Blog itu lebih sempit, lebih khusus.
+
+Berbeda dengan web apps yang lebih mengutamakan SPA (single page application) karena memerlukan kemudahan development dan fleksibilitas program, blog ini lebih dikhususkan untuk meraih user dari Google. Maka, kita memerlukan aspek SEO. Kalau kita menggunakan teknologi yang membentuk web apps, maka fokusnya sudah berbeda dan agak sulit untuk mengoptimalkan SEO. Misalnya aja kita pakai web apps yang SSR (static site rendering) seperti SvelteKit, Nuxt, atau Next, kita dapat sih aspek SEO-nya. Tapi, setelah aspek SEO itu terpenuhi, ada pula aspek root hydration yang sangat memakan resource.
+
+Makanya untuk web apps, bagusnya sih SPA aja. Soalnya, nggak ngejar SEO juga.
+
+> Jadi, yang pertama adalah khusus generate HTML dan menghindari root hydration
+
+Kemudian, untuk generate HTML ini kah ada banyak. Bisa yang nggak berkaitan dengan JS seperti Hugo dan Jekyll yang memang murni generate HTML, ada pula Nunjucks, Pug, dan kawan-kawan. Ada pula yang partial hydration seperti Iles dan Astro. Nah, kalau kita pakai yang nggak berkaitan sama JS, alias murni generate HTML, kekurangannya adalah kita akan kesulitan untuk import package dari NPM. Misal, kita nemu package bagus dari NPM, terus mau kita pasang di Jekyll. Itu akan kesulitan. Berarti ya package itu dibundle dulu dengan bundler semacam Rollup atau Webpack. Ribet sih. Kalau mau yang nggak ribet, bisa pakai [bumi](https://github.com/mzaini30/bumi). Tapi, tetap nggak senyaman kalau kita masukkan package NPM di script kita seperti ini:
+
+```html
+<script setup="">
+	import confetti from 'canvas-confetti'
+
+	const nama = 'World'
+
+	confetti()
+</script>
+
+<template>
+	<p>Hello {{ nama }}</p>
+</template>
+```
+
+Jadi, kandidat kita tinggal Iles dan Astro.
+
+Lalu, karena aku lagi mempelajari Vue, maka aku memilih Iles.

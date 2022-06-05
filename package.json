@@ -2,9 +2,9 @@
   "name": "iles-app",
   "version": "0.0.0",
   "scripts": {
-    "dev": "iles dev --open",
+    "dev": "iles dev",
     "build": "iles build",
-    "preview": "iles preview --open --port 5050",
+    "preview": "iles preview --port 5050",
     "typecheck": "vue-tsc --noEmit"
   },
   "engines": {
@@ -17,6 +17,7 @@
     "vue-tsc": "^0.36"
   },
   "dependencies": {
+    "@giscus/vue": "^2.0.5",
     "@iconify-json/charm": "^1.1.2",
     "@unocss/preset-icons": "^0.37.4",
     "@unocss/reset": "^0.37.4",

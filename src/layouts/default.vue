@@ -54,6 +54,7 @@
         <router-link :to="x.href">{{ x.title }}</router-link>
       </li>
     </ol>
+    <Komentar client:visible></Komentar>
   </div>
 </template>
 
@@ -91,7 +92,7 @@
   .konten h4 {
     @apply text-lg font-bold
   }
-  .konten > * {
+  .konten > *:not(script) {
     @apply mb-4 block
   }
   .line-numbers-mode {

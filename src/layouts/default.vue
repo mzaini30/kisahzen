@@ -54,6 +54,9 @@
   .konten :not(pre) > code {
     @apply font-bold
   }
+  .konten code {
+    @apply text-base
+  }
   .konten a {
     @apply underline
   }

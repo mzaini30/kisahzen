@@ -1,0 +1,214 @@
+---
+title: 15 Menit Langsung Bisa CRUD dengan Vue dan Excalibur
+description: Ini cara cepat membuat website CRUD
+date: 2022-06-05
+---
+
+Membuat website erat kaitannya dengan membuat CRUD (create, read, update, delete). Tapi sayangnya, kita terlalu disibukkan dengan banyaknya kode yang harus kita tulis untuk membuat CRUD sederhana. Nah, di sini aku akan memberikan tutorial cara mudah membuat CRUD dengan memanfaatkan Vue dan Excalibur.
+
+Pertama, download dulu template Vue:
+
+```bash
+npx degit mzaini30/vue crud
+cd crud
+npm i
+```
+
+Kemudian, kita install package `excalibur-zen`:
+
+```bash
+npm i excalibur-zen
+```
+
+Kita jalankan mode dev:
+
+```bash
+npm run dev
+```
+
+Sekarang, kita buka `src/pages/index.vue` lalu desain web menjadi seperti ini:
+
+```html
+<template>
+	<form action="">
+		<label for="">Todo baru</label>
+		<input required type="text" />
+	</form>
+
+	<ol>
+		<li>Pertama</li>
+		<li>Kedua</li>
+	</ol>
+</template>
+```
+
+Lalu, kita ubah lagi dengan memberikan style dari [Uno CSS](/post/uno):
+
+```html {2,12}
+<template>
+	<div class="p-3 w-full min-h-screen bg-blue-200">
+		<form action="" class="mb-4">
+			<label class="w-full" for="">Todo baru</label>
+			<input required class="focus:outline-none block border border-green-500 rounded p-2 w-full" type="text" />
+		</form>
+
+		<ol class="list-decimal ml-5">
+			<li>Pertama</li>
+			<li>Kedua</li>
+		</ol>
+	</div>
+</template>
+```
+
+Sip. Templatenya sudah jadi:
+
+![](https://i.ibb.co/h2GcMCx/image.png)
+
+Sekarang, kita buka [excalibur.nasihosting.com](https://excalibur.nasihosting.com) lalu klik `Tambah database`. Nah, di bagian `Masukkan field`, ketik di situ: `todo`. Lalu, pencet `Enter`.
+
+Sekarang, kita sudah mendapatkan id tabelnya:
+
+![](https://i.ibb.co/NNrx2bP/image.png)
+
+Lalu, kita masukkan deh id tabel itu ke file `index.vue` yang kita buat tadi:
+
+```html {1-3}
+<script setup="">
+	const apiTodo = '3d4582c09af2c673e106dffad74265d8' // id, todo
+</script>
+
+<template>
+	<div class="p-3 w-full min-h-screen bg-blue-200">
+		<form action="" class="mb-4">
+			<label class="w-full" for="">Todo baru</label>
+			<input required class="focus:outline-none block border border-green-500 rounded p-2 w-full" type="text" />
+		</form>
+
+		<ol class="list-decimal ml-5">
+			<li>Pertama</li>
+			<li>Kedua</li>
+		</ol>
+	</div>
+</template>
+```
+
+Sekarang, kita tambahkan file `index.vue` itu dengan beberapa hal yang diperlukan seperti import package `excalibur-zen`, dan lain-lainnya:
+
+```html {2,4}
+<script setup="">
+	import excalibur from 'excalibur-zen'
+
+	const server = 'https://excalibur.nasihosting.com/sql.php'
+	const apiTodo = '3d4582c09af2c673e106dffad74265d8' // id, todo
+</script>
+
+<template>
+	<div class="p-3 w-full min-h-screen bg-blue-200">
+		<form action="" class="mb-4">
+			<label class="w-full" for="">Todo baru</label>
+			<input required class="focus:outline-none block border border-green-500 rounded p-2 w-full" type="text" />
+		</form>
+
+		<ol class="list-decimal ml-5">
+			<li>Pertama</li>
+			<li>Kedua</li>
+		</ol>
+	</div>
+</template>
+```
+
+Sekarang, kita tautkan tag `input` dengan `v-model`:
+
+```html {3,8,15}
+<script setup=""> 
+	import excalibur from 'excalibur-zen'
+	import {ref} from 'vue'
+
+	const server = 'https://excalibur.nasihosting.com/sql.php'
+	const apiTodo = '3d4582c09af2c673e106dffad74265d8' // id, todo
+
+	const inputTodo = ref('')
+</script>
+
+<template>
+	<div class="p-3 w-full min-h-screen bg-blue-200">
+		<form action="" class="mb-4">
+			<label class="w-full" for="">Todo baru</label>
+			<input required v-model='inputTodo' class="focus:outline-none block border border-green-500 rounded p-2 w-full" type="text" />
+		</form>
+
+		<ol class="list-decimal ml-5">
+			<li>Pertama</li>
+			<li>Kedua</li>
+		</ol>
+	</div>
+</template>
+```
+
+Sekarang, kembali ke website Excalibur. Klik `Olah SQL`. Pada bagian `ID database`, masukkan `id tabel` tadi: `3d4582c09af2c673e106dffad74265d8`. Lalu, `Enter`.
+
+Kemudian, di textarea, masukkan perintah SQL seperti ini:
+
+```sql
+ambil
+select * from [db]
+
+tambah
+insert into [db] (todo) values ([todo])
+```
+
+Lalu klik `Update`.
+
+Jadi, kita sudah membuat dua kunci. Dengan kunci `ambil`, dia akan menjalankan `select * from [db]` dan dengan kunci `tambah`, dia akan menjalankan `insert into [db] (todo) values ([todo])`. Maksud dari `[db]` itu artinya adalah id table yaitu `database_3d4582c09af2c673e106dffad74265d8`. Sedangkan maksud dari `[todo]` adalah variable todo yang nanti bisa diisi dengan nilai apapun.
+
+Sekarang, kita ubah `index.vue` menjadi seperti ini:
+
+```html {9-31,36,41-42}
+<script setup="">
+	import excalibur from 'excalibur-zen'
+	import {ref} from 'vue'
+
+	const server = 'https://excalibur.nasihosting.com/sql.php'
+	const apiTodo = '3d4582c09af2c673e106dffad74265d8' // id, todo
+
+	const inputTodo = ref('')
+	const semuaData = ref([])
+
+	async function ambil(){
+		let datanya = await excalibur(server, {
+			id: apiTodo,
+			kunci: 'ambil'
+		})
+		datanya = await datanya.json()
+		semuaData.value = datanya
+	}
+	ambil()
+
+	async function tambah(){
+		const mulaiTambah = await excalibur(server, {
+			id: apiTodo,
+			kunci: 'tambah',
+			todo: inputTodo.value
+		})
+		if (mulaiTambah){
+			inputTodo.value = ''
+			ambil()
+		}
+	}
+</script>
+
+<template>
+	<div class="p-3 w-full min-h-screen bg-blue-200">
+		<form @submit.prevent='tambah' action="" class="mb-4">
+			<label class="w-full" for="">Todo baru</label>
+			<input required v-model='inputTodo' class="focus:outline-none block border border-green-500 rounded p-2 w-full" type="text" />
+		</form>
+
+		<ol v-if='semuaData' class="list-decimal ml-5">
+			<li v-for='x in semuaData'>{{ x.todo }}</li>
+		</ol>
+	</div>
+</template>
+```
+
+Untuk hasilnya, bisa dilihat di [crud-excalibur.surge.sh](https://crud-excalibur.surge.sh).

@@ -1,0 +1,64 @@
+---
+title: Desain Website Mudah dan Menyenangkan Menggunakan Uno CSS
+description: Dengan Uno CSS, kamu bisa membuat desain website dengan cepat dan mudah
+date: 2022-06-05
+---
+
+Bagi seorang website developer, terutama yang bagian frontend, mendesain website adalah salah satu pekerjaan yang mudah-mudah sulit. Soalnya, kalau misalnya kita menggunakan Bootstrap karena pengen cepat selesai, ntar redesainnya bingung karena harus pakai `!important` di sana-sini. Kalau kita mau desain dengan bebas, bisa menggunakan pure CSS, tapi bakalan lama selesainya.
+
+Akhirnya, kita mendapatkan solusinya yaitu Tailwind CSS.
+
+Dengan Tailwind, kita mendesain tombol seperti ini:
+
+```html
+<button class="bg-green-500 px-3 py-2 rounded text-white">Tombol</button>
+```
+
+Mudah banget. Konsepnya sama seperti pure CSS tapi disingkat-singkat penulisannya. Misalnya aja `px-3`. Itu berarti mengatur padding secara horizontal (sumbu x). Terus ada `rounded` yang berarti ujungnya bulet. Ada juga `text-white` yang berarti warna teks itu putih. Mudah banget kan ya?
+
+Tapi, masalah timbul. Ternyata, Tailwind kurang cepat compilenya.
+
+Akhirnya, muncullah Uno CSS yang menawarkan kecepatan kompilasi CSS dengan style yang sama dengan Tailwind.
+
+Untuk menggunakan Uno CSS, bisa menggunakan template Vue yang sudah aku siapkan:
+
+- [Template Vue untuk membuat website](https://github.com/mzaini30/vue)
+- [Template Vue untuk membuat aplikasi Android](https://github.com/mzaini30/android-vue)
+- [Template Vue untuk membuat Chrome extension](https://github.com/mzaini30/chrome-vue)
+
+Untuk contoh di sini, kita pakai yang template Vue untuk membuat website aja.
+
+Pertama, kita ambil dulu templatenya lalu install dependencies:
+
+```bash
+npx degit mzaini30/vue latihan-vue
+cd latihan-vue
+npm i
+```
+
+Sekarang kita lihat pada `src/pages/index.vue`. Itu adalah halaman beranda website kita. Di situ, sudah aku beri contoh penggunaan Uno CSS:
+
+```html
+<template>
+	<div class='p-5'>
+		<h1 class='text-3xl text-zinc-500 mb-1'>Assalamualaikum</h1>
+		<p class="text-zinc-500">Welcome to this Vue template, cooked by Zen.</p>
+	</div>
+
+	<img v-for='(_, n) in Array(5)' class="block mb-10 w-full h-auto" v-lazy='`https://http.cat/${n + 1}00.jpg`' alt="" />
+</template>
+
+<style scoped="">
+	* {
+		@apply italic text-center
+	}
+</style>
+```
+
+Mungkin contoh yang kamu dapatkan bakal berbeda. Tapi, ketika aku akses hari ini (5/6/2022) isinya itu.
+
+Sekarang, kita bisa jalankan dengan:
+
+```bash
+npm run dev
+```

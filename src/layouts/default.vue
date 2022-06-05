@@ -55,7 +55,7 @@
     @apply font-bold
   }
   .konten code {
-    @apply text-base
+    @apply !text-base
   }
   .konten a {
     @apply underline

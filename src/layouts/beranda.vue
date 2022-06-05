@@ -10,3 +10,9 @@
 	
   <slot/>
 </template>
+
+<style>
+	* {
+		word-wrap: break-word;
+	}
+</style>

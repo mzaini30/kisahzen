@@ -61,6 +61,7 @@
 <style>
   * {
     tab-size: 2;
+    word-wrap: break-word;
   }
   .konten :where(ul, ol){
     @apply ml-5

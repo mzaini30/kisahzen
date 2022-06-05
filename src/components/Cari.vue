@@ -25,6 +25,7 @@
     <input 
       v-model='teksCari' 
       type="text" 
+      spellcheck="false"
       autocomplete="off"
       @keyup='mulaiCari'
       class="w-full block focus:outline-none rounded p-2" 

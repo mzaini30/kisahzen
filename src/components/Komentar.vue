@@ -1,3 +1,19 @@
+<script setup="">
+	import Giscus from '@giscus/vue'
+</script>
+
 <template>
-	<p>Hai</p>
+	<Giscus
+		repo="mzaini30/kisahzen"
+		repoId="R_kgDOGkvMSA"
+		category="Announcements"
+		categoryId="DIC_kwDOGkvMSM4CPezo"
+		mapping="pathname"
+		reactionsEnabled="1"
+		emitMetadata="0"
+		inputPosition="top"
+		theme="light"
+		lang="id"
+		loading="lazy"
+	></Giscus>
 </template>

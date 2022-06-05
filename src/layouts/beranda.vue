@@ -5,7 +5,7 @@
 
 <template>
 	<Head>
-		<link rel="icon" href="/icon.jpg"/>
+		<link rel="icon" href="/icon.jpeg"/>
 	</Head>
   <slot/>
 </template>

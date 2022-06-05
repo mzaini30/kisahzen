@@ -9,9 +9,9 @@
 
 <template>
 	<Head>
-		<link rel="icon" href="/icon.jpg"/>
+		<link rel="icon" href="/icon.jpeg"/>
 	</Head>
-  <div class="konten p-4">
+  <div class="konten mx-auto w-600px max-w-full p-4">
     <router-link to="/" class='uppercase font-bold text-sm'>
       <div class="i-charm-arrow-left inline-block -mb-2px"></div>
       Kembali ke beranda
@@ -41,7 +41,7 @@
     @apply text-lg font-bold
   }
   .konten > * {
-    @apply mb-3 block
+    @apply mb-4 block
   }
   .line-numbers-mode {
     @apply bg-#272822 text-#f8f8f2 rounded overflow-hidden

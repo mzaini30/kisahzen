@@ -16,7 +16,7 @@
 
     <div>
       <router-link 
-        v-for='x in postingan.sort((a, b) => a.date > b.date ? 1 : -1)' 
+        v-for='x in postingan.sort((a, b) => a.date < b.date ? 1 : -1)' 
         class='list-postingan text-sm rounded bg-slate-700 px-5 py-2 text-white inline-block mr-3 mb-3' 
         :to="x.href"
       >{{ x.title }}</router-link>

@@ -6,7 +6,7 @@
   function mulaiCari(){
     let semuaPostingan = document.querySelectorAll('.list-postingan')
     semuaPostingan.forEach(x => {
-      if (!x.innerText.toLowerCase().includes(teksCari.value.toLowerCase())){
+      if (!x.innerText.toLowerCase().includes(teksCari.value.toLowerCase().trim())){
         x.classList.add('hidden')
       } else {
         x.classList.remove('hidden')

@@ -7,5 +7,6 @@
 	<Head>
 		<link rel="icon" href="/icon.jpeg"/>
 	</Head>
+	
   <slot/>
 </template>

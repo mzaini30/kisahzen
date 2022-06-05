@@ -25,7 +25,7 @@
     <input 
       v-model='teksCari' 
       type="text" 
-      autocomplete="false"
+      autocomplete="off"
       @keyup='mulaiCari'
       class="w-full block focus:outline-none rounded p-2" 
       placeholder="Ketik yang mau kamu cari" 

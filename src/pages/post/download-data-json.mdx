@@ -1,0 +1,52 @@
+---
+title: Membuat Link untuk Mendownload Data JSON
+description: Jadi, data yang udah kita olah di website, bisa ada fitur save-nya
+date: 2022-06-08
+---
+
+Contoh kode:
+
+```html
+<script setup="">
+	const {stringify} = JSON
+
+	const data = {
+		nama: 'Zen',
+		alamat: 'Samarinda',
+		pekerjaan: 'Guru'
+	}
+
+	function btoa(x){
+		return window.btoa(x)
+	}
+
+	function hariIni(){
+		const tanggalan = new Date
+
+		const tahun = tanggalan.getFullYear()
+		const bulan = (tanggalan.getMonth() + 1).toString().padStart(2, '0')
+		const tanggal = tanggalan.getDate().toString().padStart(2, '0')
+
+		return `${tahun}-${bulan}-${tanggal}`
+	}
+</script>
+
+<template>
+	<a 
+		:href="`data:text/plain;charset=utf-8;base64,${btoa(stringify(data, null, 2))}`" 
+		:download='`${hariIni()}.json`'
+	>Klik</a>
+</template>
+
+<style scoped="">
+	a {
+		@apply underline m-3 inline-block
+	}
+</style>
+```
+
+Intinya adalah pada bentuk linknya: `data:text/plain;charset=utf-8;base64,{jsonJadiBase64}`
+
+Dan attribute `download` yang berisi value `2022-06-08.json` (hari ini).
+
+Itu intinya sih.

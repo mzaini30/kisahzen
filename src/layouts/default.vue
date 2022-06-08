@@ -7,6 +7,10 @@
   import {useRoute} from 'vue-router'
   const postingan = useDocuments('~/pages/post')
 
+  const lokasi = {
+    laptop: '/home/zen/personal-project/kisahzen/src/pages'
+  }
+
   const {frontmatter} = usePage()
 
   const bulan = [
@@ -42,8 +46,8 @@
     <p class="text-sm text-center">{{ frontmatter.date.getDate() }} {{ bulan[frontmatter.date.getMonth()] }} {{ frontmatter.date.getFullYear() }}</p>
     <slot/>
     <p 
-      class='underline decoration-dotted cursor-pointer' 
-      :data-v-inspector-file="`/home/zen/personal-project/kisahzen/src/pages${useRoute().path}.mdx`" 
+      class='underline decoration-dotted cursor-pointer select-none' 
+      :data-v-inspector-file="`${lokasi.laptop}${useRoute().path}.mdx`" 
       data-v-inspector-line="1" 
       data-v-inspector-column="1" 
       :data-v-inspector-title="`${useRoute().path.replace('/post/', '')}.mdx`" 

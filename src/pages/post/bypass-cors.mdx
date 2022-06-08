@@ -1,0 +1,22 @@
+---
+title: How to Bypass CORS for Getting API
+description: These are links for bypass CORS
+date: 2022-06-08
+---
+
+For frontend developers, of course you are familiar with CORS errors like this:
+
+> Access to fetch at 'https://google.com/' from origin 'http://localhost:3000' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource . If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+
+So, basically we want to connect to the API but we can't because the server refuses.
+
+How to handle it?
+
+The trick is to add one of the following links in front of your API link:
+
+- https://scrappy-php.herokuapp.com/?url=
+- https://api.allorigins.win/raw?url=
+- https://cors.eu.org/
+- https://cors-proxy.tk/?url=
+
+Well, just give it a try...

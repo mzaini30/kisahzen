@@ -24,7 +24,7 @@
     "@unocss/transformer-directives": "^0.37.4",
     "get-all-files": "^4.1.0",
     "kumpulan-tools": "^1.0.0",
-    "unocss": "^0.37.4",
+    "unocss": "^0.38.2",
     "vite-plugin-vue-inspector": "^1.0.1"
   }
 }

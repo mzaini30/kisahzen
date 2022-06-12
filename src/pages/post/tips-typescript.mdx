@@ -1,0 +1,43 @@
+---
+title: Tips Menggunakan TypeScript
+description: Ini adalah beberapa tips saat menggunakan TypeScript
+date: 2022-06-12
+---
+
+## RAM Minimal 8 GB
+
+Aku kemaren pas belum upgrade RAM, masih 2 GB, jalankan LSP TypeScript di Sublime itu loading banget sampai buat ngelag. Alhamdulillah habis hari ini upgrade RAM, jadi lancar.
+
+## Gunakan LSP TypeScript
+
+Ini khusus buat pengguna Sublime ya. Install package `LSP`, lalu install package `LSP TypeScript`. Kalau di VS Code sih nggak perlu install extension lagi karena sudah include.
+
+Kenapa sih perlu pakai `LSP TypeScript`? Ya karena fungsinya TypeScript ini kan mengubah text editor biasa menjadi IDE. Bayangkan aja IDE itu seperti Eclipse atau Android Studio. Nah, kita pakai tuh keunggulan TypeScript itu di text editor kita. Jadi, dia akan secara otomatis menjalankan fitur type checking dan fitur-fitur lainnya seperti auto suggest.
+
+## Jalankan dengan Esno
+
+Saat menjalankan TypeScript, perintahnya bukan lagi pakai `node` karena memang nggak bakalan bisa menjalankan. Tapi, pakai `esno`. Contohnya seperti ini:
+
+```bash
+esno src/index.ts
+```
+
+Cara install `esno` adalah `npm i -g esno`
+
+## Build dengan Unbuild
+
+Pastinya kan nggak semua orang pakai TypeScript. Harus dibuild dulu jadi JavaScript biasa. Nah, buildnya itu paling mudah pakai `unbuild`
+
+Pertama, buat dulu file `build.config.ts` yang berisi:
+
+```typescript
+export default {
+	entries: ['src/index']
+}
+```
+
+Kemudian, build dengan `unbuild`
+
+Maka, akan jadi file `dist/index.mjs`
+
+Cara install `unbuild` adalah dengan perintah `npm i -g unbuild`

@@ -3,30 +3,33 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "iles dev",
-    "build": "iles build && node script/sisipkanAdsense.mjs",
+    "build": "iles build && esno script/sisipkanAdsense.ts",
     "preview": "iles preview --port 5050",
     "typecheck": "vue-tsc --noEmit",
-    "release": "bumpp --commit --tags --push"
+    "prettier": "prettier --write '**/*.{ts,vue,css}'"
   },
   "engines": {
     "node": "^14.18 || >= 16.0.0"
   },
-  "devDependencies": {
-    "@islands/prism": "^0.1.1",
-    "bumpp": "^7.1.1",
-    "iles": "^0.7.19",
-    "typescript": "^4.5",
-    "vue-tsc": "^0.36"
+  "simple-git-hooks": {
+    "pre-push": "npm run prettier"
   },
-  "dependencies": {
+  "devDependencies": {
     "@giscus/vue": "^2.0.5",
     "@iconify-json/charm": "^1.1.2",
+    "@islands/prism": "^0.1.1",
     "@unocss/preset-icons": "^0.37.4",
     "@unocss/reset": "^0.37.4",
     "@unocss/transformer-directives": "^0.37.4",
+    "esno": "^0.16.3",
     "get-all-files": "^4.1.0",
+    "iles": "^0.7.19",
     "kumpulan-tools": "^1.0.0",
+    "prettier": "^2.6.2",
+    "simple-git-hooks": "^2.8.0",
+    "typescript": "^4.5",
     "unocss": "^0.37.4",
-    "vite-plugin-vue-inspector": "^1.0.1"
+    "vite-plugin-vue-inspector": "^1.0.1",
+    "vue-tsc": "^0.36"
   }
 }

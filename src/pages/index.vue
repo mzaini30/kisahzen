@@ -1,11 +1,11 @@
 <script setup="">
-  const postingan = useDocuments('~/pages/post')
-  const kontenKhusus = useDocuments('~/pages/konten-khusus')
+const postingan = useDocuments("~/pages/post");
+const kontenKhusus = useDocuments("~/pages/konten-khusus");
 </script>
 
-<template layout='beranda'>
+<template layout="beranda">
   <Head>
-    <meta property="og:image" content="https://www.kisahzen.com/cover.jpg">
+    <meta property="og:image" content="https://www.kisahzen.com/cover.jpg" />
     <meta name="twitter:image" content="https://www.kisahzen.com/cover.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
   </Head>
@@ -16,21 +16,23 @@
     <Cari client:visible></Cari>
 
     <div>
-      <router-link 
-        v-for='x in postingan.sort((a, b) => a.date < b.date ? 1 : -1)' 
-        class='list-postingan text-sm rounded bg-slate-700 px-5 py-2 text-white inline-block mr-3 mb-3' 
+      <router-link
+        v-for="x in postingan.sort((a, b) => (a.date < b.date ? 1 : -1))"
+        class="list-postingan text-sm rounded bg-slate-700 px-5 py-2 text-white inline-block mr-3 mb-3"
         :to="x.href"
-      >{{ x.title }}</router-link>
+        >{{ x.title }}</router-link
+      >
     </div>
 
     <p class="mb-3 font-bold uppercase">Meta</p>
 
     <div>
-      <router-link 
-        v-for='x in kontenKhusus.sort((a, b) => a.date < b.date ? 1 : -1)' 
-        class='list-postingan text-sm rounded bg-slate-700 px-5 py-2 text-white inline-block mr-3 mb-3' 
+      <router-link
+        v-for="x in kontenKhusus.sort((a, b) => (a.date < b.date ? 1 : -1))"
+        class="list-postingan text-sm rounded bg-slate-700 px-5 py-2 text-white inline-block mr-3 mb-3"
         :to="x.href"
-      >{{ x.title }}</router-link>
+        >{{ x.title }}</router-link
+      >
     </div>
   </div>
 </template>

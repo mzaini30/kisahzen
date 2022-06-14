@@ -1,3 +1,3 @@
-import { defineApp } from 'iles'
+import { defineApp } from "iles";
 
-export default defineApp({})
+export default defineApp({});

@@ -6,7 +6,7 @@
     "build": "iles build && esno script/sisipkanAdsense.ts",
     "preview": "iles preview --port 5050",
     "typecheck": "vue-tsc --noEmit",
-    "prettier": "prettier --write '**/*.{ts,vue,css}'"
+    "prettier": "prettier --write 'src/**/*.{ts,vue,css}'"
   },
   "engines": {
     "node": "^14.18 || >= 16.0.0"

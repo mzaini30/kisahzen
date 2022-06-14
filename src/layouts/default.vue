@@ -14,18 +14,18 @@
   const {frontmatter} = usePage()
 
   const bulan = [
-    'Januari',
-    'Februari',
-    'Maret',
+    'January',
+    'February',
+    'March',
     'April',
-    'Mei',
-    'Juni',
-    'Juli',
-    'Agustus',
+    'May',
+    'June',
+    'July',
+    'August',
     'September',
-    'Oktober',
+    'October',
     'November',
-    'Desember'
+    'December'
   ]
 </script>
 
@@ -40,10 +40,10 @@
   <div class="konten mx-auto w-600px max-w-full p-4">
     <router-link to="/" class='uppercase !no-underline font-bold text-sm'>
       <div class="i-charm-arrow-left inline-block -mb-2px"></div>
-      Kembali ke beranda
+      Back to home
     </router-link>
     <h1>{{ frontmatter.title }}</h1>
-    <p class="text-sm text-center">{{ frontmatter.date.getDate() }} {{ bulan[frontmatter.date.getMonth()] }} {{ frontmatter.date.getFullYear() }}</p>
+    <p class="text-sm text-center">{{ bulan[frontmatter.date.getMonth()] }} {{ frontmatter.date.getDate() }}, {{ frontmatter.date.getFullYear() }}</p>
     <slot/>
     <p 
       class='underline decoration-dotted cursor-pointer select-none' 
@@ -52,7 +52,7 @@
       data-v-inspector-column="1" 
       :data-v-inspector-title="`${useRoute().path.replace('/post/', '')}.mdx`" 
     >edit</p>
-    <h2>Tulisan Lainnya</h2>
+    <h2>Related Posts</h2>
     <ol class="list-decimal ml-5">
       <li v-for='x in acak(postingan).filter(x => x.href != useRoute().path).filter((x, n) => n < 5)' class='mb-2'>
         <router-link :to="x.href">{{ x.title }}</router-link>

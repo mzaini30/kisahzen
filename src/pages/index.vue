@@ -23,7 +23,7 @@
       >{{ x.title }}</router-link>
     </div>
 
-    <p class="mb-3 font-bold uppercase">Konten Khusus</p>
+    <p class="mb-3 font-bold uppercase">Meta</p>
 
     <div>
       <router-link 

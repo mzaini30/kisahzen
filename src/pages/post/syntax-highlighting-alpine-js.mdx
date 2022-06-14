@@ -1,0 +1,57 @@
+---
+title: How to Syntax Highlighting Alpine JS in Sublime
+description: This is Alpine JS syntax highlighting method in Sublime on x- prefix
+date: 2022-06-14
+---
+
+In Alpine JS, we use the `x-` prefix to make things reactive. However, the value of the `x-` prefix is considered a normal HTML attribute:
+
+![](https://i.ibb.co/556xVwh/image.png)
+
+What we want is something like this:
+
+![](https://i.ibb.co/x5rP1tj/image.png)
+
+How to?
+
+First is to install package `PackageResourceViewer`
+
+Once installed, press `Ctrl` `Shift` `p` then search for `PackageResourceViewer: Open Resource`
+
+Select `Vue Syntax Highlight`
+
+Select `Vue Component.sublime-syntax`
+
+Search section:
+
+```yaml
+vue-directive:
+  - match: (?=v-)
+    push:
+      - vue-directive-assignment
+      - tag-generic-attribute-name
+  - match: (?::|@)
+    scope: punctuation.definition.attribute.html
+    push:
+      - vue-directive-assignment
+      - tag-generic-attribute-name
+```
+
+Change to:
+
+```yaml {2-5}
+vue-directive:
+  - match: (?=x-)
+    push:
+      - vue-directive-assignment
+      - tag-generic-attribute-name
+  - match: (?=v-)
+    push:
+      - vue-directive-assignment
+      - tag-generic-attribute-name
+  - match: (?::|@)
+    scope: punctuation.definition.attribute.html
+    push:
+      - vue-directive-assignment
+      - tag-generic-attribute-name
+```

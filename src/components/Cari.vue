@@ -29,7 +29,7 @@
       autocomplete="off"
       @keyup='mulaiCari'
       class="w-full block focus:outline-none rounded p-2" 
-      placeholder="Ketik yang mau kamu cari" 
+      placeholder="Type what you want to search" 
     />
     <button class="bg-slate-700 rounded px-4 py-2 text-white" @click='reset'>reset</button>
   </div>

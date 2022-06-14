@@ -13,7 +13,7 @@
 		emitMetadata="0"
 		inputPosition="top"
 		theme="light"
-		lang="id"
+		lang="en"
 		loading="lazy"
 	></Giscus>
 </template>
